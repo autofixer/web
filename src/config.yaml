@@ -1,0 +1,36 @@
+# The default app title
+title : 'Welcome to autofixer solutions'
+# Seo Keywords
+keywords : 'Moorexa, Moorexa PHP framework'
+# Seo Description
+description : 'The best PHP framework out there, with so much power and flexibility'
+# Seo Author
+author : 'Ifeanyi Amadi, Amadiify'
+# Favicon
+icon : 'moorexa-icon.png'
+# Beautiful url
+beautiful_url_target : __app_request__
+# Router global configuration
+router :
+  # set default controller and view
+  default :
+    controller : 'app'
+    view : home
+# launcher configuration
+launcher :
+  # set the content types for each platforms
+  contentType :
+    api : 'application/json'
+    web : 'text/html'
+    cli : 'text/plain'
+# actions for model
+actions :
+  - add
+  - create
+  - edit
+  - delete
+  - show
+# javascript script type
+javascript_type : 'application/javascript'
+# add launch year
+launch_year : 2022

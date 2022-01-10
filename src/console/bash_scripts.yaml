@@ -1,0 +1,3 @@
+# register one or more bash scripts and give them an alias
+# you can trigger script by calling php assist 'alias-name' [args]
+start-rabbitmq-worker: '%DISTRIBUTION_BASE_PATH%/console/rabbitmq-worker.php'

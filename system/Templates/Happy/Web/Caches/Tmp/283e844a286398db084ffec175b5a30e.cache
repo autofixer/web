@@ -1,0 +1,203 @@
+<?php
+use function Lightroom\Templates\Functions\{controller};
+use function Lightroom\Requests\Functions\{session, cookie, get};
+use function Lightroom\Common\Functions\csrf;
+?><!-- Banner Section -->
+<section id="ms-banner-section" class="ms-contact-bnr">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">Get A Quote</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" href="<?=web_url("/")?>">Home</a> / Get A Quote</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Get a quote section -->
+<section id="ms-contact-section" class="ms-sec-padding ms-special-footer-pad ms-service-section-with-links">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<ul class="processes">
+					<li class="active" data-target="choose-a-service"><i class="ion ion-checkmark"></i> <span>Choose a service</span></li>
+					<li data-target="car-brand"><i class="ion ion-checkmark"></i> <span>Choose a car brand</span></li>
+					<li data-target="car-model"><i class="ion ion-checkmark"></i> <span>Enter car model</span></li>
+					<li data-target="car-year"><i class="ion ion-checkmark"></i> <span>Enter car year</span></li>
+					<li data-target="contact-details"><i class="ion ion-checkmark"></i> <span>Enter contact details</span></li>
+					<li data-target="describe-issue"><i class="ion ion-checkmark"></i> <span>Describe the issue</span></li>
+					<li data-target="submit-request"><i class="ion ion-checkmark"></i> <span>Submit your request</span></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-9 process-tab-list">
+
+				<div class="process-tab active" id="choose-a-service">
+					<h2 class="ms-font-weight-900">CHOOSE A SERVICE</h2>
+
+					<?php if(isset($option['status']) && $option['status'] == 'success') { ?>
+						<div class="alert alert-success" style="margin-top: 15px;">
+							<?=$option['message']?>
+						</div>
+					<?php } ?>
+
+					<div class="services" data-select="true" data-btn-to="car-brand" data-only-radio="yes">
+						<label for="maintenance">
+							<img class="img-fluid pb-3 ms-main-img" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', '22.png')?>" alt="Service Image">
+							<h5>Maintenance</h5>
+							<input type="radio" id="maintenance" name="service" value="maintenance"/>
+						</label>
+
+						<label for="diagnosis">
+							<img class="img-fluid pb-3 ms-main-img" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', '24.png')?>" alt="Service Image">
+							<h5>Diagnosis</h5>
+							<input type="radio" id="diagnosis" name="service" value="diagnosis"/>
+						</label>
+
+						<label for="repair">
+							<img class="img-fluid pb-3 ms-main-img" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', '21.png')?>" alt="Service Image">
+							<h5>Repair</h5>
+							<input type="radio" id="repair" name="service" value="repair"/>
+						</label>
+					</div>
+
+					<button type="button" disabled class="btn ms-primary-btn ms-red-border-btn ms-font-oswald"  data-to="car-brand">Next</button>
+				</div>
+
+				<div class="process-tab" id="car-brand">
+					<h2 class="ms-font-weight-900">CHOOSE A CAR BRAND</h2>
+
+					<div class="car-brand">
+
+						<div class="services contain-select" id="car_manufacturers" data-next="auto" data-select="true" data-only-radio="yes" data-btn-to="car-model" data-request="loadAllManufactures|#car_manufacturers">
+							
+						</div>
+
+						<div class="btn-group">
+							<button type="button" class="btn ms-primary-btn ms-primary-btn-prev ms-red-border-btn ms-font-oswald" data-to="choose-a-service">Back</button>
+							<button type="button" disabled class="btn ms-primary-btn ms-red-border-btn ms-font-oswald"  data-to="car-model">Next</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="process-tab" id="car-model" data-to="car-year" data-required-enable="#move_next">
+					<h2 class="ms-font-weight-900">ENTER CAR MODEL</h2>
+
+					<div class="form-content-area">
+						<div class="form-row">
+							<div class="form-group col-12">
+								<input type="text" data-required="yes" class="form-control form-control-lg rounded-0" id="car_model" placeholder="eg. Civic, Corolla etc." required>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<button type="button" class="btn ms-primary-btn ms-primary-btn-prev ms-red-border-btn ms-font-oswald" data-to="car-brand">Back</button>
+						<button type="button" id="move_next" disabled class="btn ms-primary-btn ms-red-border-btn ms-font-oswald"  data-to="car-year">Next</button>
+					</div>
+				</div>
+
+				<div class="process-tab" id="car-year" data-required-enable="#move_next">
+					<h2 class="ms-font-weight-900">ENTER CAR YEAR</h2>
+
+					<div class="form-content-area">
+						<div class="form-row">
+							<div class="form-group col-12">
+								<input type="text" data-required="yes" class="form-control form-control-lg rounded-0" id="car_year" placeholder="eg. 2003, 2004, 2012" required>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<button type="button" class="btn ms-primary-btn ms-primary-btn-prev ms-red-border-btn ms-font-oswald" data-to="car-model">Back</button>
+						<button type="button" id="move_next" disabled class="btn ms-primary-btn ms-red-border-btn ms-font-oswald"  data-to="contact-details">Next</button>
+					</div>
+				</div>
+
+				<div class="process-tab" id="contact-details" data-required-enable="#move_next">
+					<h2 class="ms-font-weight-900">CONTACT DETAILS</h2>
+
+					<div class="form-content-area">
+
+						<div class="form-row">
+							<div class="form-group col-12">
+								<label for="name">Name<span>*</span></label>
+								<input type="text" class="form-control form-control-lg rounded-0" data-required="yes" id="name" placeholder="First & Last Name" required>
+							</div>
+							<div class="form-group col-12 col-md-6">
+								<label for="email">Email<span>*</span></label>
+								<input type="email" class="form-control form-control-lg rounded-0" data-required="yes" id="email" placeholder="We need to send a confirmation" required>
+							</div>
+							<div class="form-group col-12 col-md-6">
+								<label for="tel">Telephone<span>*</span></label>
+								<input type="tel" class="form-control form-control-lg rounded-0" data-required="yes" id="tel" placeholder="So we can call you" required>
+							</div>
+							<div class="form-group col-12">
+								<label for="location">Location<span>*</span></label>
+								<input type="text" class="form-control form-control-lg rounded-0" data-required="yes" id="location" list="location" placeholder="E.g Abuja" required>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="car-info" style="margin-top: 30px;">
+						<h2 class="ms-font-weight-900">CAR INFORMATION</h2>
+
+						<div class="form-content-area">
+
+							<div class="form-row">
+
+								<div class="form-group col-12">
+									<label for="number_of_cars">Number of Car[s]<span>*</span></label>
+									<input type="number" class="form-control form-control-lg rounded-0" data-required="yes" id="number_of_cars" list="location" value="1" required>
+								</div>
+
+								<div class="form-group col-12">
+									<label for="mileage">Car Mileage<span>*</span></label>
+									<select class="form-control form-control-lg rounded-0" data-required="yes" id="mileage" required>
+										<option value=""> Please choose </option>
+										<option value="0-100,000">0 - 100,000</option>
+										<option value="101,000-300,000">101,000 - 300,000</option>
+										<option value="301,000-600,000">301,000 - 600,000</option>
+										<option value="601,000-1,000,000">601,000 - 1,000,000</option>
+									</select>
+								</div>
+								
+							</div>
+
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<button type="button" class="btn ms-primary-btn ms-primary-btn-prev ms-red-border-btn ms-font-oswald" data-to="car-year">Back</button>
+						<button type="button" id="move_next" disabled class="btn ms-primary-btn ms-red-border-btn ms-font-oswald"  data-to="describe-issue">Next</button>
+					</div>
+				</div>
+
+				<div class="process-tab" id="describe-issue" data-required-enable="#move_next">
+					<h2 class="ms-font-weight-900">DESCRIBE THE ISSUE</h2>
+
+					<div class="form-content-area">
+
+						<div class="form-row">
+							<div class="form-group col-12">
+								<textarea rows="10" class="form-control form-control-lg rounded-0" data-required="yes" id="issue" placeholder="Please describe what issue you could be having at this point."></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn-group">
+						<button type="button" class="btn ms-primary-btn ms-primary-btn-prev ms-red-border-btn ms-font-oswald" data-to="contact-details">Back</button>
+						<button type="button" id="move_next" onclick="submitQuote(this)" disabled class="btn ms-primary-btn ms-red-border-btn ms-font-oswald">Submit</button>
+					</div>
+				</div>
+
+				<div class="process-tab" id="submit-request">
+					<h2 class="ms-font-weight-900">SUBMIT YOUR REQUEST</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

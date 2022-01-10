@@ -1,0 +1,95 @@
+<?php
+use function Lightroom\Templates\Functions\{controller};
+use function Lightroom\Requests\Functions\{session, cookie, get};
+use function Lightroom\Common\Functions\csrf;
+?><!-- Footer Section -->
+<footer id="ms-footer">
+  <div class="ms-footer-top">
+      <div class="container">
+          <div class="ms-newsletter-box ms-bg-red">
+              <div class="row align-items-center">
+                  <div class="col-md-5">
+                      <h3 class="text-white ms-font-lato font-weight-bold mb-3 mb-md-0 text-center text-md-left">SIGNUP FOR NEWSLETTER</h3>
+                  </div>
+                  <div class="col-md-7">
+                      <form class="form-group mb-0 collect-form-data" data-caller="signUpForNewsletter">
+                          <div class="form-group mb-0 position-relative">
+                              <input type="email" id="email" required placeholder="Enter email address">
+                          </div>
+                          <button type="submit" class="btn ms-foot-btn position-absolute">SUBSCRIBE</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="ms-spacer-100"></div>
+          <div class="row">
+              <div class="col-md-3 pb-4 pb-md-0">
+                  <h5 class="text-white ms-font-21 font-weight-bold mb-4">SITEMAP</h5>
+                  <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("/")?>">Home</a></h6>  
+                  <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("about-us")?>">About Us</a></h6>  
+                  <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("what-we-do")?>">What We Do</a></h6>  
+                  <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("what-we-dont-do")?>">What We Don't Do</a></h6>  
+                  <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("testimonials")?>">Testimonials</a></h6>  
+                  <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("services")?>">Services</a></h6>   
+              </div>
+
+            <div class="col-md-3 pb-4 pb-md-0">
+                <h5 class="text-white ms-font-21 font-weight-bold mb-4">OTHERS</h5>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("get-a-quote")?>">Get A Quote</a></h6>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=\Happy\Directives::runDirective(true,'youtube-url')?>">Videos</a></h6>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("book-online")?>">Booking</a></h6>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("faq")?>">FAQ</a></h6>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("contact")?>">Contact Us</a></h6>  
+            </div>
+
+            <div class="col-md-3 pb-4 pb-md-0">
+                <h5 class="text-white ms-font-21 font-weight-bold mb-4">SERVICES</h5>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("services/car-diagnosis")?>">Diagnosis</a></h6>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("services/car-maintenance")?>">Maintenance</a></h6>  
+                <h6 class="ms-font-roboto-slab font-weight-light"><a href="<?=web_url("services/car-repair")?>">Repair</a></h6>  
+            </div>
+
+              <div class="col-md-3 pb-4 pb-md-0">
+                  <h5 class="text-white ms-font-21 font-weight-bold mb-4">BUSINESS HOURS</h5>
+                  <h6 class="ms-font-roboto-slab font-weight-light mb-4">Monday to Friday:<br> 10.00am to 7.00pm</h6>
+                  <h6 class="ms-font-roboto-slab font-weight-light">Vacations:<br> All Sundays<br> All Official Holidays</h6>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="ms-footer-bottom">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-4">
+                  <a href="<?=web_url("/")?>"><img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'AUTO-FIXERLOGO2_clean_nored.png')?>" class="footer-small-logo" alt="Logo"></a>
+                  <h6 class="ms-font-roboto-slab font-weight-light position-relative">© Copyright <?=\Happy\Directives::runDirective(true,'get-launch-year')?>. Autofixer Nigeria limited</h6>
+              </div>
+              <div class="col-md-2 text-md-center my-4 my-md-0">
+                  <a class="mr-2 mr-lg-3" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                  <a class="mr-2 mr-lg-3" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="https://uk.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+              </div>
+              <div class="offset-md-1 col-md-5">
+                  <div class="ms-bg-orange text-white">
+                      <h5 class="ms-font-weight-900">CONTACT</h5>
+                      <h5 class="ms-font-roboto-slab font-weight-light mb-0">Call: <span><a href="tel:+1313123456" class="text-white">1313 123 456</a></span></h5>
+                      <h5 class="ms-font-roboto-slab font-weight-light mb-1">Email: <span><a href="mailto:info@autofixer.com.ng" class="text-white">info@autofixer.com.ng</a></span></h5>
+                      <h5 class="ms-font-roboto-slab font-weight-light">Address: 6 Daydream Street Warriewood</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</div> <!-- Body Wrapper Ends -->
+
+<!-- Preloader -->
+<div class="preloader"></div>    
+
+<!-- javascripts -->
+<?=assets()->loadJs()?>
+
+<!-- end body,html -->
+</body>
+</html>

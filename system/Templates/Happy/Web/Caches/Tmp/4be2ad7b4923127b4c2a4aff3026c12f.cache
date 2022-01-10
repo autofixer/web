@@ -1,0 +1,45 @@
+<?php
+use function Lightroom\Templates\Functions\{controller};
+use function Lightroom\Requests\Functions\{session, cookie, get};
+use function Lightroom\Common\Functions\csrf;
+?><!-- Banner Section -->
+<section id="ms-banner-section" class="ms-abt-bnr">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">What We Don't do</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" href="<?=web_url("/")?>">Home</a> / <a class="text-white" href="<?=func()->url('about-us')?>">About Us</a> / What We Don't Do</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About Content Section -->
+<section id="ms-abt-section" class="ms-sec-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 ms-pad-right">
+				<h2 class="ms-font-weight-900 mb-4 all-caps">What DOESN'T Autofixer do?</h2>
+				<p class="mb-4">People sometimes misunderstand Autofixer business setup. We are:</p>
+				<!-- <p>At AutoFixer, we believe that our service represents all of our customer's highest hopes and most stringent expectations for car service; that our company is the ultimate in convenience, friendly service, expertise and pricing that is both competitive and gives control to the customer. We do this through:</p> -->
+				<div class="row mb-4 mb-md-0">
+					<div class="col-md-12">
+						<p class="mb-3 ms-font-111"><i class="fas fa-check-circle ms-font-red ms-icon-size mr-3"></i> Not ONLY a breakdown service; Autofixer is equipped to do all standard car servicing, non-urgent repairs and diagnostics. Your car doesn’t have to be immobile to call Autofixer!</p>
+						<p class="mb-3 ms-font-111"><i class="fas fa-check-circle ms-font-red ms-icon-size mr-3"></i> Not a contracting firm. Each of our skilled mechanics is an employee, dedicated to Lube Mobile's strict quality standards and trained to provide impeccable customer service.</p>
+						<p class="mb-3 ms-font-111"><i class="fas fa-check-circle ms-font-red ms-icon-size mr-3"></i> Not an automotive club - you do not have to pay yearly fees. You will only pay for the work you need.</p>
+						<p class="mb-3 ms-font-111"><i class="fas fa-check-circle ms-font-red ms-icon-size mr-3"></i> Not necessarily more expensive than an ordinary workshop. Our service represents value for money; you can factor in aspects like time savings, convenience, eliminating towing fees for breakdowns, and the confidence that our nationwide warranty will cover any problems with repairs.</p>
+					</div>
+				</div>
+				 
+			</div>
+			<div class="col-md-5">
+				<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'about-img1.jpg')?>" class="img-fluid" alt="About Image">
+			</div>
+		</div>
+	</div>
+</section>
+
+<?=\Happy\Directives::runDirective(true,'partial','specialize')?>
+
+<?=\Happy\Directives::runDirective(true,'partial','testimonials')?>

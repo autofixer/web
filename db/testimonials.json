@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Glad Osondu",
+        "image" : "timage1.jpg",
+        "text" : "They satisfied me. I searched for the best service centre in abuja, i found them in google. They repaired my range rover evoque excellently. I became impressed by the way they handled my troubled car.",
+        "location" : "GWARIMPA, ABUJA"
+    },
+
+    {
+        "name" : "Belinda Samama",
+        "image" : "timage2.jpg",
+        "text" : "After almost been frustrated by mechanics that claimed to be experts. My gear box is working perfectly now, but not until I gave my last try to AutoFixer Limited. I regretted wasting so much before I was referred there but all the same, I am glad my car is working well as supposed",
+        "location" : "UTAKO, ABUJA"
+    },
+
+    {
+        "name" : "Kazeem Ahmed",
+        "image" : "timage3.jpg",
+        "text" : "I am so glad that I have a personal mechanic. It gives me joy and confident knowing my vehicles are safe and in good hands. Thanks Mr Idowu and co.",
+        "location" : "Keffi, Nasarawa"
+    }
+]

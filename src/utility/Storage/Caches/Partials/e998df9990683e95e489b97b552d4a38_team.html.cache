@@ -1,0 +1,38 @@
+<!-- Team Section -->
+<section id="ms-team-section" class="ms-sec-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="ms-font-weight-900">MEET OUR SPECIALISTS</h2>
+				<h4 class="ms-font-4a4a4a mb-5">Here are some of our experts.</h4>
+			</div>
+			<div class="col-md-4 mb-4 mb-md-0">
+				<div class="ms-team-box text-center rounded position-relative">
+					<img class="img-fluid ms-team-img img-circle" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'team-11.png')?>" alt="Team Image">
+					<img class="img-fluid position-absolute" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'Team-icon.png')?>" alt="Team Icon">
+					<p class="ms-font-21 ms-font-lato font-weight-bold mt-4 mb-0 ms-font-111">Idowu Banjo</p>
+					<h6 class="ms-font-4a4a4a ms-font-roboto-slab mb-4">CEO/Founder/Engineer</h6>
+					
+				</div>
+			</div>
+			<div class="col-md-4 mb-4 mb-md-0">
+				<div class="ms-team-box text-center rounded position-relative">
+					<img class="img-fluid ms-team-img img-circle" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', '2.png')?>" alt="Team Image">
+					<img class="img-fluid position-absolute" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'Team-icon.png')?>" alt="Team Icon">
+					<p class="ms-font-21 ms-font-lato font-weight-bold mt-4 mb-0 ms-font-111">Evette Doughty</p>
+					<h6 class="ms-font-4a4a4a ms-font-roboto-slab mb-4">CO-Founder/Operation Manager</h6>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="ms-team-box text-center rounded position-relative">
+					<img class="img-fluid ms-team-img img-circle" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', '3.png')?>" alt="Team Image">
+					<img class="img-fluid position-absolute" src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'Team-icon.png')?>" alt="Team Icon">
+					<p class="ms-font-21 ms-font-lato font-weight-bold mt-4 mb-0 ms-font-111">Mozella Paton</p>
+					<h6 class="ms-font-4a4a4a ms-font-roboto-slab mb-4">COO/Relationship Officer</h6>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

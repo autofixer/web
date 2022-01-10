@@ -1,0 +1,84 @@
+:root{
+    --secondary-color : #fc0000;
+    --primary-color : #fff;
+}
+
+body{
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-logo{
+    width: 150px;
+    object-fit: cover;
+}
+
+.self-contain-text{
+    margin-bottom: 35px;
+}
+
+.section.bg-dummy-image.no-padding-bottom.overflow-hidden {
+    background-image: url('../images/sp9.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.service-link{
+    color: #fff;
+}
+
+.great-value-content{
+    display: grid;
+    margin-top: 50px;
+}
+
+.great-value-container .section-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.great-value-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    grid-gap:40px;
+}
+
+.great-value-content .item{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.great-value-content .item .item-image{
+    margin-right: 15px;
+    grid-column: 1/4;
+}
+
+.great-value-content .item .item-image img{
+    width: 80px;
+    object-fit: contain;
+    height: 80px;
+    background: #312e2e;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.great-value-content .item .item-content{
+    grid-column: 5/13;
+}
+
+.great-value-content .item .item-title{
+    font-size: 18px;
+}
+
+.has-bg-image{
+    background-image: url('../images/img2.jpg');
+    min-height: 500px;
+    background-position: center 150px;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+

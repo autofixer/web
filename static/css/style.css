@@ -1,0 +1,1774 @@
+@charset "UTF-8";
+/*====================================================== 
+@Template Name: Mobeva Bootstrap Template
+@Author: Daat Creations
+@Developed By: Daat Creations
+@Author URL: http://www.daatcreations.com/ 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+========================================================
+
+====================Table Of Contents===================
+
+01. General CSS
+    a. Header Section 
+    b. Pagination Design
+    c. Preloader
+    d. Footer Section
+    e. Main Sidebar
+02. Homepage CSS
+    a. Slider Section
+    b. Services Section
+    c. Need Help Section
+    d. About Us Section
+    e. Team Section
+    f. Specialize Section
+    g. Shop Section
+    h. Testimonials Section
+    i. Blog Section
+03. Inner Page's Banner CSS
+04. About Page CSS
+05. Testimonials Page CSS
+06. FAQ Page CSS
+07. 404 Error Page CSS
+08. Shop Page CSS
+09. Shop Detail Page CSS
+10. Blog V1 Page CSS, Blog V2 Page CSS and Blog Details Page CSS
+11. Team Page CSS
+12. Service V1 Page CSS, Service V2 Page CSS and Service Details Page CSS
+13. Contact Page CSS
+14. Cart Page CSS
+15. Homepage Version 2 CSS
+16. Author Page CSS
+17. 
+
+========================================================*/
+
+/*==================== 1. General CSS ====================*/
+
+h1, h2, h4, h5 {
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    font-size: 70px;
+    line-height: 1.07;
+}
+h2 {
+    font-size:30px;
+}
+h3 {
+    font-size:25px;
+}
+h4 {
+    font-size: 23px;
+}
+p {
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    color: #555;
+}
+.ms-font-17 {
+    font-size:17px;
+}
+.ms-font-21 {
+    font-size: 21px;
+}
+.ms-font-weight-900 {
+    font-weight: 900;
+}
+.ms-font-111 {
+    color:#111;
+}
+.ms-font-4a4a4a {
+    color: #4a4a4a;
+}
+.ms-font-e6e6e6 {
+    color: #e6e6e6;
+}
+.ms-font-7c7c7c {
+    color: #7c7c7c;
+}
+.ms-font-red {
+    color:#ea4335;
+}
+.ms-font-orange {
+    color: #ff8600;
+}
+a, .btn, button, a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+.ms-font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.ms-font-lato {
+    font-family: 'Lato', sans-serif;
+}
+.ms-font-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+}
+.ms-bg-cream {
+    background-color: #fffaf3;
+}
+.ms-bg-orange {
+    background-color: #fc0000;
+}
+.ms-bg-red {
+    background-color: #fc0000;
+}
+.ms-bg-blue {
+    background-color: #4285f4;
+}
+.ms-seperator {
+    background: #fc0000;
+    width: 50px;
+    height: 3px;
+}
+.ms-seperator-black {
+    background-color: #cecece;
+    width: 100%;
+    height: 1px;
+}
+.ms-spacer-10, .ms-spacer-30, .ms-spacer-40, .ms-spacer-60, .ms-spacer-70, .ms-spacer-100, .ms-spacer-120 {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.ms-spacer-10 {
+    height: 10px;
+}
+.ms-spacer-30 {
+    height: 30px;
+}
+.ms-spacer-40 {
+    height: 40px;
+}
+.ms-spacer-60 {
+    height: 60px;
+}
+.ms-spacer-70 {
+    height: 70px;
+}
+.ms-spacer-100 {
+    height: 100px;
+}
+.ms-spacer-120 {
+    height: 120px;
+}
+.ms-primary-btn {
+    background: #fc0000;
+    border: 2px solid #fc0000;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s linear;
+    -webkit-transition:  all 0.3s linear;
+    -o-transition:  all 0.3s linear;
+    padding:12px 40px;
+    border-radius: 40px;
+}
+.ms-primary-btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+}
+.ms-primary-btn-two:hover {
+    color: #ea4335;
+    border: 2px solid #ea4335;
+}
+.ms-second-btn {
+    border: 2px solid #fc0000;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition:  all 0.3s linear;
+    background: transparent;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-size: 17px;
+}
+.ms-second-btn:hover {
+    background: #fc0000;
+    color: #fff;
+}
+.ms-red-border-btn:hover{
+    border: 2px solid #ea4335;
+    color: #ea4335;
+}
+.ms-tags-btn {
+    background: #ececec;
+    padding: 5px 15px;
+    border-radius: 40px;
+    color: #232323;
+    margin: 4px 0px;
+}
+.ms-tags-btn:hover {
+    color: #fff;
+    background: #232323;
+}
+.ms-pointer {
+    cursor: pointer;
+}
+.ms-sec-padding {
+    padding: 100px 0;
+}
+.ms-special-footer-pad {
+    padding-bottom: 150px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ea4335;
+}
+
+/*========== Header Section CSS ==========*/
+header {
+    background: url('../images/header_bg.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 104px;
+}
+header .ms-logo-pad {
+    padding: 23px 35px 23px 0;
+}
+header .ms-skew-bg {
+    transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    z-index: 2;
+    left: 0;
+}
+header .ms-w-100 {
+    width:100%;
+}
+header .ms-header-top {
+    background-image: linear-gradient(to right, #252424, #1f1f1f, #1a191a, #141414, #0d0d0d, #0d0d0d, #0d0d0d, #0d0d0d, #141414, #1a191a, #1f1f1f, #252424);
+    padding: 15px 60px;
+    font-size: 15px;
+    min-height: 55px;
+}
+header .ms-header-top a:hover {
+    text-decoration: none;
+}
+header .ms-header-top p, header .ms-header-top img, header .ms-header-top .ms-header-icon,  .navbar-toggler.collapsed, header nav ul li {
+    transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    -o-transform: skew(30deg);
+}
+header .ms-header-top .ms-header-icon {
+    color:#fff;
+    margin: 0 5px;
+}
+header .ms-header-main ul li a.nav-link {
+    margin: 0 13px;
+}
+header .ms-header-main .ms-header-area .ms-header-content .navbar-nav li a:hover, 
+header .ms-header-main .ms-header-area .ms-header-content .navbar-nav li a:focus {
+    color: #ff761b;
+}
+header .ms-header-main nav ul li .dropdown-menu {
+    top: 46px;
+    z-index: 100099999999999;
+}
+header .ms-header-main nav ul li.dropdown {
+    backface-visibility: hidden;
+}
+header .ms-header-main .ms-header-area .ms-header-content .navbar-nav li.dropdown .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 1px 0px 7px 0px rgba(22, 43, 70, 0.1);
+    transition: all 300ms linear 0s;
+    -webkit-transition: all 300ms linear 0s;
+    -o-transition: all 300ms linear 0s;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+header .ms-header-main .ms-header-area .ms-header-content .navbar-nav li:hover.dropdown .dropdown-menu, 
+header .ms-header-main .ms-header-area .ms-header-content .navbar-nav li:focus.dropdown .dropdown-menu {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+}
+
+header .ms-header-main nav ul li .dropdown-menu .dropdown-item {
+    font-size: 16px;
+}
+header .ms-header-main nav ul li.dropdown .svg-inline--fa {
+    font-size:12px;
+    position: relative;
+    bottom: 2px;
+}
+/*---------- hamburger menu css ----------*/
+.navbar-toggler:focus {
+    outline: none;
+}
+.menu_toggle {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}  
+.menu_toggle .hamburger {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.menu_toggle .hamburger span {
+    width: 0%;
+    height: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 4px 0;
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.menu_toggle .hamburger span:nth-child(1) {
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu_toggle .hamburger span:nth-child(2) {
+    -webkit-transition-delay: .125s;
+    -o-transition-delay: .125s;
+    transition-delay: .125s;
+}
+.menu_toggle .hamburger span:nth-child(3) {
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+}
+.menu_toggle .hamburger-cross {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+}
+.menu_toggle .hamburger-cross span {
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.menu_toggle .hamburger-cross span:nth-child(1) {
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+}
+.menu_toggle .hamburger-cross span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    -webkit-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+.collapsed .menu_toggle .hamburger span {
+    width: 100%;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(1) {
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(2) {
+    -webkit-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+.collapsed .menu_toggle .hamburger span:nth-child(3) {
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+}
+.collapsed .menu_toggle .hamburger-cross span:nth-child(1) {
+    height: 0%;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.collapsed .menu_toggle .hamburger-cross span:nth-child(2) {
+    width: 0%;
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+/*========== Pagination Design ==========*/
+.pagination li a {
+    margin-right: 6px;
+    margin-left: 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #6f6f6f;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition:  all 0.3s linear;
+}
+.pagination li a:hover, .pagination li a.active {
+    background-color: #ea4335;
+    color: #fff;
+    border: 1px solid #ea4335;
+}
+
+/*========== Preloader CSS==========*/
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color:#fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../images/loader.gif');
+}
+
+/*========== Footer Section CSS ==========*/
+#ms-footer {
+    background: #1f1f1f;
+    padding-top: 100px;
+    position: relative;
+}
+#ms-footer .ms-newsletter-box {
+    padding: 35px 50px;
+    border-radius: 80px;
+    margin-top: -170px;
+}
+#ms-footer a, #ms-footer h6 {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+#ms-footer a:hover {
+    color: #fff;
+}
+#ms-footer .ms-footer-top iframe {
+    max-width: 100%;
+    max-height: 300px;
+}
+#ms-footer .ms-footer-bottom {
+    margin-top: -6px;
+}
+#ms-footer .ms-footer-bottom {
+    background: url('../images/footer-bg.jpg');
+}
+#ms-footer .ms-footer-bottom .ms-bg-orange {
+    padding: 30px 30px 40px 30px;
+}
+#ms-footer .ms-footer-top input {
+    width: 100%;
+    padding: 20px 220px 20px 30px;
+    border-radius: 50px;
+    border: none;
+}
+#ms-footer .ms-footer-top input:focus {
+    outline: none;
+}
+#ms-footer .ms-footer-top input::placeholder {
+    font-family: 'Roboto Slab', serif;
+    color: #2c2c2c;
+    font-weight: 300;
+}
+#ms-footer .ms-footer-top .ms-foot-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    background: #000;
+    border: 2px solid #000;
+    color: #fff;
+    cursor: pointer;
+    top:0;
+    right: 15px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    padding: 16px 60px;
+    border-radius: 50px;
+}
+#ms-footer .ms-footer-top .ms-foot-btn:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+#ms-footer .ms-footer-bottom h5 {
+    font-size: 19px;
+}
+
+/*========== Main Sidebar CSS ==========*/
+#ms-main-sidebar .form-control:focus {
+    border-color: #ebebeb;
+    box-shadow: none;
+}
+#ms-main-sidebar form .form-control {
+    position: relative;
+    background: #ebebeb;
+    padding: 12px 60px 12px 15px;
+    border-radius: 0;
+    border: 1px solid #ebebeb;
+}
+#ms-main-sidebar form .ms-search-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    padding: 12px 15px;
+    background: #232323;
+    color: #fff;
+    border: 1px solid #232323;
+    border-radius: 0;
+}
+#ms-main-sidebar form .ms-search-btn:focus {
+    box-shadow: none;
+}
+#ms-main-sidebar .ms-category-sec p {
+    padding: 15px 20px;
+    border: 1px solid #cecece;
+    margin-bottom: 0;
+}
+#ms-main-sidebar .ms-category-sec p:hover .float-right.mt-1, 
+#ms-main-sidebar .ms-category-sec p.active .float-right.mt-1 {
+    color: #ea4335;
+}
+
+/*==================== 2. Homepage CSS ====================*/
+/*---------- Slider Section ----------*/
+#ms-slider-section .carousel-indicators {
+    left: 65%;
+    bottom: 400px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    height: 20px;
+    z-index: 1;
+}
+#ms-slider-section .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#ms-slider-section .carousel-caption {
+    bottom: 150px;
+}
+#ms-slider-section .ms-slider-pad {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#ms-slider-section .carousel-inner img.ms-slide-img {
+    min-height: 580px;
+    object-fit: cover;
+}
+#ms-slider-section .ms-primary-btn {
+    padding: 18px 60px;
+}
+
+/*---------- Services Section ----------*/
+#ms-service-section .ms-left-image-bg {
+    background: url('../images/Yellow-bg-with-car_copy2.jpg') center;
+    background-size: cover;
+    padding: 100px 80px;
+    z-index: -1;
+}
+#ms-service-section ul {
+    list-style-type: none;
+}
+#ms-service-section ul li span {
+    min-width: 150px;
+}
+#ms-service-section .ms-sec-padding {
+    padding-left: 70px;
+}
+#ms-service-section .ms-service-box {
+    background: #f2f2f2;
+    color: #4a3533;
+    padding: 50px 0 15px 0;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    margin-bottom: 30px;
+}
+#ms-service-section .ms-service-box .ms-service-box-hover {
+    padding: 50px 0 10px 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background: #fc0000;
+    opacity: 0;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-service-section .ms-service-box:hover .ms-service-box-hover {
+    opacity: 1;
+}
+#ms-service-section .ms-service-box .ms-service-box-hover p {
+    color: #4a3533;
+}
+#ms-service-section .ms-service-box:hover .ms-service-box-hover p {
+    color: #fff;
+}
+#ms-service-section .ms-sidebar-img {
+    left: 250px;
+    height: 767px;
+    display: none;
+    z-index: -1;
+}
+
+/*---------- Need Help Section ----------*/
+#ms-help-section .ms-help-box {
+    background: transparent;
+    border: 2px solid #fbcc90;
+    border-radius: 50px;
+}
+
+/*---------- About Us Section ----------*/
+#ms-about-section {
+    background: url('../images/about-sec-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+#ms-about-section h6 {
+    line-height: 1.5;
+}
+#ms-about-section .ms-contact-box {
+    padding: 30px 15px;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+#ms-about-section .ms-contact-box a {
+    color:#fff;
+}
+#ms-about-section .ms-contact-box.position-relative {
+    top: 130px;
+}
+
+/*---------- Team Section ----------*/
+#ms-team-section .ms-team-box, #ms-shop-section .ms-shop-box { /*---- CSS of Shop Section hover also included ----*/
+    border: 1px solid #ebebeb;
+    padding: 40px 0 50px 0;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-team-section .ms-team-box:hover, #ms-shop-section .ms-shop-box:hover { /*---- CSS of Shop Section hover also included ----*/
+    box-shadow: 0px 20px 43px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #ebebeb;
+}
+#ms-team-section .ms-team-box img.position-absolute {
+    top: 42%;
+    right: 22%;
+}
+
+/*---------- Specialize Section ----------*/
+#ms-special-section {
+    background: #071017;
+}
+#ms-special-section .ms-img-content {
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+}
+
+/*---------- Shop Section ----------*/
+#ms-shop-section .ms-shop-box {
+    padding: 15px 15px 0px 15px;
+}
+#ms-shop-section .ms-shop-box h3 del, #ms-shop-detail-section del {
+    color: #b8b6b2;
+}
+#ms-shop-section .ms-add-btn {
+    background: #000;
+    border-radius: 0;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    border:2px solid #000;
+}
+#ms-shop-section .ms-buy-btn {
+    background: #fc0000;
+    border-radius: 0;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    border: 2px solid #fc0000;
+}
+#ms-shop-section .ms-add-btn:hover {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+#ms-shop-section .ms-buy-btn:hover {
+    background: #fff;
+    border: 2px solid #ea4335;
+    color: #ea4335;
+}
+#ms-shop-section .ms-shop-box .row.position-relative {
+    top:30px;
+    opacity: 0;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+}
+#ms-shop-section .ms-shop-box:hover .row.position-relative {
+    opacity: 1;
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+}
+
+/*---------- Testimonials Section ----------*/
+.ms-testimonial-home .ms-testimonial-box:after {
+    left: 290px !important;
+}
+.ms-testimonial-home #customers-testimonials .owl-nav button {
+    position: absolute;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    top: 130px;
+    color: #000;
+    box-shadow: 0px 10px 43px 0px rgba(0, 0, 0, 0.15);
+}
+.ms-testimonial-home #customers-testimonials .owl-nav .owl-prev {
+    left: 15%;
+}
+.ms-testimonial-home #customers-testimonials .owl-nav .owl-next {
+    right: 15%;
+}
+.ms-testimonial-home #customers-testimonials .owl-nav span {
+    position: relative;
+    bottom: 15px;
+}
+
+/*---------- Blog Section ----------*/
+#ms-blog-section {
+    background: #1a1a1a;
+    padding-bottom: 150px;
+}
+#ms-blog-section p {
+    font-size: 15px;
+}
+#ms-blog-section .ms-width-24 {
+    max-width: 24% !important;
+    flex: 0 0 24% !important;
+}
+#ms-blog-section .ms-width-38 {
+    max-width: 38% !important;
+    flex: 0 0 38% !important;
+}
+#ms-blog-section .ms-blog-box:hover h4 {
+    text-decoration: underline;
+}
+
+/*==================== 3. Inner Page's Banner CSS ====================*/
+#ms-banner-section {
+    padding: 190px 0 180px 0;
+    background-size: cover;
+}
+#ms-banner-section h1, #ms-faq-section h1 {
+    font-size: 50px;
+}
+
+/*==================== 4. About Page CSS ====================*/
+/*---------- Banner Section ----------*/
+.ms-abt-bnr {
+    background: url('../images/banners/abt-banner.jpg') no-repeat center;
+}
+
+/*---------- About Content Section ----------*/
+#ms-abt-section .col-md-7.ms-pad-right {
+    padding-right: 60px;
+}
+#ms-abt-section .col-md-7.ms-pad-left {
+    padding-left: 60px;
+}
+#ms-abt-section .ms-icon-size
+ {
+    font-size: 22px;
+}
+
+/*==================== 5. Testimonials Page CSS ====================*/
+#ms-testimonial-section .ms-testimonial-box img {
+    margin-top: -110px;
+}
+#ms-testimonial-section .ms-testimonial-box {
+    box-shadow: 0px 10px 43px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 40px 30px 40px;
+    margin-top: 60px;
+    position: relative;
+    background: #fff;
+}
+#ms-testimonial-section .ms-testimonial-box:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -2em;
+    left: 250px;
+    border: 1em solid black;
+    border-color: transparent transparent #fff #fff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*==================== 6. FAQ Page CSS ====================*/
+
+#ms-faq-section h6 {
+    line-height: 1.5;
+}
+#ms-faq-section .card-header {
+    padding: 0;
+    border:0;
+    transition: all 0.3s linear;
+}
+#ms-faq-section .card-title>a {
+    display:block;
+    padding:20px;
+    color:#555;
+    font-weight:bold;
+    text-decoration:none;
+}
+#ms-faq-section .card-header a:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f13a";
+    float: right;
+    transition: all 0.2s;
+    font-size: 26px;
+    position: relative;
+    bottom: 5px;
+}
+#ms-faq-section .card-header.active a:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color: #fff;
+}
+#ms-faq-section .card-header:hover, #ms-faq-section .card-header.active {
+    background-color: #ea4335;
+}
+#ms-faq-section .card-header:hover .card-title>a, 
+#ms-faq-section .card-header.active .card-title>a {
+    color:#fff;
+}
+
+/*==================== 7. 404 Error Page CSS ====================*/
+/*---------- Banner Section ----------*/
+.ms-404-bnr {
+    background: url('../images/banners/faq-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/*---------- 404 Page Section ----------*/
+#ms-404-section { 
+    padding: 200px 0 250px 0; 
+} 
+#ms-404-section h1 {  
+    font-size: 45px; 
+}
+
+/*==================== 8. Shop Page CSS ====================*/
+/*---------- Banner Section ----------*/
+.ms-shop-bnr {
+    background: url('../images/banners/shop-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/*==================== 9. Shop Detail Page CSS ====================*/
+/*---------- Shop Detail Content Section ----------*/
+#ms-shop-detail-section {
+    padding-bottom: 120px;
+}
+#ms-shop-detail-section .carousel-item .thumb {
+    width: 31.6%;
+    cursor: pointer;
+    float: left;
+}
+#ms-shop-detail-section .carousel-item img {
+    width: 100%;
+    border:1px solid #cecece;
+}
+#ms-shop-detail-section .carousel-item .thumb img {
+    max-width: 100%;
+    border:1px solid #cecece;
+}
+#ms-shop-detail-section .carousel-item .thumb {
+    margin-right:10px;
+    margin-top:10px;
+}
+#ms-shop-detail-section .carousel-item .thumb:last-child {
+    margin-right:0px;
+}
+#ms-shop-detail-section .ms-rating-star {
+    color:#ffc902;
+}
+#ms-shop-detail-section .ms-customer a {
+    color:#111;
+    text-decoration: underline;
+}
+#ms-shop-detail-section span {
+    cursor:pointer;
+}
+#ms-shop-detail-section .ms-minus, #ms-shop-detail-section .ms-plus{
+    width: 32px;
+    height: 58px;
+    background: #ebebeb;
+    border-radius: 0;
+    padding: 5px;
+    border: 1px solid #cecece;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+}
+#ms-shop-detail-section .ms-number input {
+    height: 58px;
+    width: 100px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #cecece;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#ms-shop-detail-section .ms-btn-dark {
+    font-family: 'Oswald', sans-serif;
+    background: #000;
+    border-radius: 0;
+    padding: 15px 30px;
+    color: #fff;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    border:2px solid #000;
+}
+#ms-shop-detail-section .ms-btn-dark:hover {
+    background: transparent;
+    border-radius: 0;
+    color: #000;
+    border:2px solid #000;
+}
+#ms-shop-detail-section .ms-wishlist a:hover, 
+#ms-shop-detail-section .ms-tabs-section .nav-link.active, 
+#ms-shop-detail-section .ms-tabs-section .nav-link:hover {
+    color: #ea4335;
+}
+#ms-shop-detail-section .ms-tabs-section .nav-link {
+    padding: 0;
+    margin-right: 30px;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+#ms-shop-detail-section .ms-tabs-section .table-bordered td, 
+#ms-shop-detail-section .table-bordered th {
+    width: 33.33%;
+}
+#ms-shop-detail-section .ms-tabs-section .ms-reviews-tab-sec {
+    border: 1px solid #cecece;
+    padding: 25px 25px 10px 25px;
+}
+#ms-shop-detail-section form .form-control-lg, 
+#ms-contact-section form .form-control-lg {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/*==================== 10. Blog V1 Page CSS, Blog V2 Page CSS and Blog Details Page CSS ====================*/
+/*---------- Banner Section ----------*/ 
+.ms-blog-1-bnr, .ms-blog-2-bnr, .ms-blog-detail-bnr {
+    background: url('../images/banners/faq-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/*---------- Blog Content Section ----------*/
+#ms-blog-page-section article {    
+    padding-bottom: 20px;
+}
+#ms-blog-page-section article .blog-meta-data a {
+    color:#212529;
+}
+#ms-blog-page-section article .blog-meta-data a:hover {
+    color:#ea4335;
+}
+#ms-blog-detail-section span a:hover, 
+#ms-blog-detail-section .ms-reviews-tab-sec h6 a:hover {
+    color:#ea4335;
+}
+#ms-blog-detail-section .ms-reviews-tab-sec {
+    border: 1px solid #cecece;
+    padding: 25px 25px 10px 25px;
+}
+#ms-blog-detail-section form .form-control-lg {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/*==================== 11. Team Page CSS ====================*/
+/*---------- Banner Section ----------*/ 
+.ms-team-bnr {
+    background: url('../images/banners/team-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/*---------- Our Team Page Content ----------*/
+#ms-team-page-section .ms-team-box {
+    border: 1px solid #ebebeb;
+    padding: 100px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-team-page-section .ms-team-box:hover {
+    box-shadow: 0px 20px 43px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+}
+#ms-team-page-section .ms-social-icon .ms-icon {
+    color: #595857;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-team-page-section .ms-social-icon .ms-icon:hover {
+    background:#ea4335;
+    color: #fff;
+}
+
+/*==================== 12. Service V1 Page CSS, Service V2 Page CSS and Service Details Page CSS ====================*/
+/*---------- Banner Section ----------*/
+.ms-service-bnr {
+    background: url('../images/banners/service-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/*---------- Service Page Tab Section ----------*/
+#ms-service-tab-section .nav-pills .nav-link.active {
+    background-color: transparent;
+}
+#ms-service-tab-section .nav-link {
+    padding: 0;
+}
+#ms-service-tab-section .ms-service-box {
+    color: #4a3533;
+    padding: 50px 0 15px 0;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    margin-bottom: 30px !important;
+    background: #ffe8e6;
+}
+#ms-service-tab-section .ms-service-box .ms-service-box-hover, 
+#ms-service-tab-section .nav-link.nav-link.active .ms-service-box .ms-service-box-hover {
+    padding: 50px 0 10px 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background: #ea4335;
+    opacity: 0;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-service-tab-section .ms-service-box:hover .ms-service-box-hover, 
+#ms-service-tab-section .nav-link.nav-link.active .ms-service-box .ms-service-box-hover {
+    opacity: 1;
+}
+#ms-service-tab-section .ms-service-box p {
+    color: #4a3533;
+}
+#ms-service-tab-section .ms-service-box:hover .ms-service-box-hover p, 
+#ms-service-tab-section .nav-link.nav-link.active .ms-service-box .ms-service-box-hover p {
+    color: #fff;
+}
+#ms-service-tab-section .tab-content {
+    padding-left: 60px;
+}
+#ms-service-tab-section .ms-service-img-box {
+    margin-bottom: 30px;
+}
+#ms-service-tab-section .ms-service-img-box-hover {
+    position: absolute;
+    top: 46%;
+    bottom: 55%;
+    right: 0;
+    left: 0;
+}
+#ms-service-tab-section .ms-service-img-box .ms-service-img-box-hover p {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 3px 0;
+}
+#ms-service-tab-section .ms-service-img-box .ms-service-img-box-hover p:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    background-color: #ea4335;
+    -webkit-transition: all .1s ease;
+    transition: all 0.3s ease;  
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+#ms-service-tab-section .ms-service-img-box:hover .ms-service-img-box-hover p:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.ms-service-2-tab-section .tab-content {
+    padding-left: 0 !important;
+}
+.ms-service-2-tab-section .ms-service-img-box {
+    margin-bottom: 50px !important;
+}
+
+/*---------- Brands We Work With Section ----------*/
+.ms-brands-section .ms-sec-padding .row img {
+    padding: 30px;
+}
+.ms-brands-section .ms-sidebar-img {
+    height: 680px !important;
+}
+
+/*==================== 13. Contact Page CSS ====================*/
+/*---------- Banner Section ----------*/
+.ms-contact-bnr {
+    background: url('../images/banners/contact-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/*---------- Contact Page Content Section ----------*/
+#ms-contact-section .ms-social-icon .ms-icon {
+    background: #232323;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-contact-section .ms-social-icon .ms-icon:hover {
+    background: #ea4335;
+}
+
+/*==================== 14. Cart Page CSS ====================*/
+/*---------- Cart Page Content ----------*/
+#ms-cart-section h6 a:hover {
+    color: #ea4335;
+}
+#ms-cart-section span {
+    cursor:pointer;
+}
+#ms-cart-section .ms-minus, #ms-cart-section .ms-plus{
+    width: 32px;
+    height: 40px;
+    background: #ebebeb;
+    border-radius: 0;
+    padding: 1px;
+    border: 1px solid #cecece;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+}
+#ms-cart-section .ms-number input {
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #cecece;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#ms-cart-section form .form-control {
+    position: relative;
+    background: #ebebeb;
+    padding: 15px 10px;
+    border-radius: 0;
+    border: 1px solid #ebebeb;
+}
+
+#ms-cart-section .ms-btn-dark {
+    font-family: 'Oswald', sans-serif;
+    background: #000;
+    border-radius: 0;
+    padding: 14px 40px;
+    color: #fff;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    border:2px solid #000;
+}
+#ms-cart-section .ms-btn-dark:hover {
+    background: transparent;
+    border-radius: 0;
+    color: #000;
+    border:2px solid #000;
+}
+#ms-cart-section .ms-primary-btn {
+    padding: 14px 40px;
+    border-radius: 0;
+    font-size: 16px;
+}
+#ms-testimonial-section #customers-testimonials .item {
+    text-align: center;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#ms-testimonial-section #customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+#ms-testimonial-section .owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 110px;
+    margin: -100px auto 5px;
+}
+
+/*==================== 15. Homepage Version 2 CSS ====================*/
+.ms-font-40 {
+    font-size: 40px;
+}
+.home-two-pad {
+    padding: 120px 0;
+}
+#homepage-two p {
+    font-size: 19px;
+    line-height: 32px;
+    color: #777773;
+}
+.ms-green-btn {
+    background: #31f7c8;
+    border: 2px solid #31f7c8;
+    font-size: 17px;
+    font-weight: bold;
+    color: #15202a;
+    transition: all 0.3s linear;
+    -webkit-transition:  all 0.3s linear;
+    -o-transition:  all 0.3s linear;
+    padding:12px 40px;
+    border-radius: 40px;
+}
+.ms-green-btn:hover {
+    color: #15202a;
+    background: #ffd542;
+    border: 2px solid #ffd542;
+}
+.small-green-btn {
+    padding: 8px 20px;
+    font-size: 15px;
+}
+/*---------- Header CSS ----------*/
+#homepage-two header {
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    min-height: 0;
+    background-image: none;    
+}
+#homepage-two header .ms-header-main {
+    background: #fff;
+}
+#homepage-two header .ms-header-main nav {             
+    padding: 0;
+}
+#homepage-two header .ms-header-main ul li a.nav-link {
+    margin: 0px;
+    color: #01060e;
+    padding: 18px 20px;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#homepage-two header nav ul li {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    transform: skew(0deg);
+    -webkit-transform: skew(0deg);
+    border-right: 1px solid #ececec;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#homepage-two header nav ul li:hover, 
+#homepage-two header nav ul li.active {
+    border-right: 1px solid #ffd542;
+    background-color:#ffd542;
+}
+#homepage-two header nav ul li .dropdown-menu {
+    padding: 0;
+}
+#homepage-two header nav ul li .dropdown-menu a {
+    font-weight: bold;
+    padding: 10px 20px;
+}
+#homepage-two header nav ul li .dropdown-menu a:hover {
+    background-color:#ffd542;
+    color: #212529;
+}
+#homepage-two header nav ul li:last-child {
+    border-right: none ;
+}
+#homepage-two header .ms-header-main nav ul li .dropdown-menu {
+    top: 58px;
+}
+#homepage-two header .header-social-icon .icons {
+    width: 40px;
+    height: 40px;
+    background: #fff5d4;
+    padding: 11px;
+    color: #121212;
+    border: 1px solid #ffd542;
+    border-radius: 4px;
+    margin: 4px 3px 0 3px;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#homepage-two header .header-social-icon .icons:hover {
+    background-color: #ffd542;
+    border: 1px solid #ffd542;
+}
+/*---------- Slider Section CSS ----------*/
+#home-two-slider-section .carousel-control-prev,
+#home-two-slider-section .carousel-control-next {
+    width: 8%;
+    top: 44%;
+    bottom: 44%;
+}
+@media (min-width:500px) {
+    #home-two-slider-section .carousel-control-next, 
+    #home-two-slider-section .carousel-control-prev {
+        opacity: 1;
+    }
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon {
+        background-image: url('../images/home-two-slider-1.jpg');
+        width: 100%;
+        border: 4px solid #fff;
+        background-color: #fff;
+        border-right-width: 30px;
+        height: 90%;
+        background-size: cover;
+        position: relative;
+        transition: 0.3s all linear;
+        -webkit-transition: 0.3s all linear;
+    }
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon:hover {
+        border: 4px solid #ffd542;
+        background-color: #ffd542;
+    }
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon:after {
+        content: '❯';
+        position: absolute;
+        right: -18px;
+        color: #333;
+        top: 28px;
+    }
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon:hover:after {
+        content:' ';
+    }
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon {
+        background-image: url('../images/home-two-slider-2.jpg');
+        width: 100%;
+        border: 4px solid #fff;
+        background-color: #fff;
+        border-left-width: 30px;
+        height: 90%;
+        background-size: cover;
+        position: relative;
+        transition: 0.3s all linear;
+        -webkit-transition: 0.3s all linear;
+    }
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon:hover {
+        border: 4px solid #ffd542;
+        background-color: #ffd542;
+    }
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon:after {
+        content: '❮';
+        position: absolute;
+        left: -18px;
+        color: #333;
+        top: 28px;
+    }
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon:hover:after {
+        content:' ';
+    }
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+   }
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1;
+   }
+   
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+    opacity: 0;
+   }
+   
+   .carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+   }
+
+
+#home-two-slider-section .ms-slide-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+    min-height: 700px;
+    object-fit: cover;
+}
+#home-two-slider-section h1 {
+    font-size: 60px;
+}
+#home-two-slider-section .carousel-caption {
+    bottom: 25%;
+    left: 10%;
+    right: 10%;
+}
+/*---------- Services Section CSS ----------*/
+#home-two-service-sec .call-icon {
+    background: #ffd542;
+    padding: 6px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 27px;
+    height: 27px;
+}
+#home-two-service-sec .ms-icon-box {
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#home-two-service-sec .ms-icon-box .main-icon .main-icon-hover {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;    
+}
+#home-two-service-sec .ms-icon-box:hover .main-icon .main-icon-hover {
+    opacity: 1;
+}
+#home-two-service-sec .ms-icon-box a {
+    color: #121215;
+}
+#home-two-service-sec .hexagon {
+    position: relative;
+    width: 350px; 
+    height: 175px;
+    background-color: #ff0055;
+    z-index: 0;
+}
+#home-two-service-sec .hexagon:before,
+#home-two-service-sec .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+}
+#home-two-service-sec .hexagon:before {
+    bottom: 100%;
+    border-bottom: 105px solid #ff0055;
+}
+#home-two-service-sec .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 105px solid #ff0055;
+    z-index: -1;
+}
+#home-two-service-sec .hexagon img {
+    display: block;
+    margin: 15px auto;
+}
+#home-two-service-sec .position-absolute {
+    bottom: 105px;
+    right: 30px;
+}
+#home-two-service-sec .special-pos {
+    position: relative;
+    bottom: 25px;
+}
+/*---------- About Us Section CSS ----------*/
+#home-two-abt-sec {
+    background:  url('../images/home-two-abt-bg-img.png'), url('../images/home-two-abt-man.png');
+    background-color: #f4f2ee;
+    background-repeat: no-repeat;
+    background-position-x: 95%, 20%;
+    background-position-y: 0, 30px;
+    background-size: 20%, 34%;
+}
+/*---------- Gallery Section CSS ----------*/
+#home-two-gallery-sec {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#home-two-gallery-sec .ms-img-gallery .ms-img-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(255,0,85,0.85);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#home-two-gallery-sec .ms-img-gallery:hover .ms-img-hover {
+    opacity: 1;
+}
+#home-two-gallery-sec .ms-img-gallery .ms-img-hover p {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+/*---------- Testimonial Section CSS ----------*/
+#home-two-testimonial-sec h4 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #777773;
+    line-height: 34px;
+}
+/*---------- Shop Section CSS ----------*/
+#home-two-shop-sec {
+    background: url('../images/home-two-shop-bg.png') no-repeat;
+    background-color: #f4f2ee;
+    background-position-x: 100%;
+    background-position-y: 180px;
+}
+#home-two-shop-sec .home-two-shop-box {
+    padding: 30px;
+    cursor: pointer;
+}
+#home-two-shop-sec .home-two-shop-box .shop-box {
+    position: relative;
+}
+#home-two-shop-sec .home-two-shop-box .shop-box .shop-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    opacity: 0;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#home-two-shop-sec .home-two-shop-box:hover .shop-box .shop-hover {
+    opacity: 1;
+}
+#home-two-shop-sec .home-two-shop-box h5 a {
+    color: #121215;
+}
+#home-two-shop-sec .home-two-shop-box h5.pink-color {
+    color: #ff0055;
+}
+#home-two-shop-sec .owl-carousel .owl-nav.disabled {
+    display: block;
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+#home-two-shop-sec .owl-carousel .owl-nav button {
+    font-size: 120px;
+    font-weight: 100;
+    color: #b6b6b1;
+    line-height: 0;
+    position: relative;
+}
+#home-two-shop-sec .owl-carousel .owl-nav .owl-prev {
+    top: 20px;
+    left: 15px;
+}
+/*---------- Blog Section CSS ----------*/
+#home-two-blog-sec {
+    background: url('../images/home-two-blog-bg.png') no-repeat;
+    background-position: -34% 250%;
+}
+#home-two-blog-sec .image {
+    overflow: hidden;
+}
+#home-two-blog-sec .image img {
+    transition: .5s;
+}
+#home-two-blog-sec article:hover .image img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#home-two-blog-sec .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    line-height: 1.4;
+}
+#home-two-blog-sec .title a {
+    color: #121215;
+}
+#home-two-blog-sec article .title a {
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#home-two-blog-sec article:hover .title a {
+    text-decoration: underline;
+}
+#home-two-blog-sec .date {
+    color: #ff0055;
+    font-family: 'Lato', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*---------- Newsletter Section CSS ----------*/
+#home-two-newsletter-sec .ms-bg-color {
+    background: #ff0055;
+    padding: 60px 70px 60px 100px;
+}
+#home-two-newsletter-sec .ms-bg-color:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 70px 0 0 70px;
+    border-color: transparent transparent transparent #fff;
+    content: "";
+    position: absolute;
+    display: none;
+}
+#home-two-newsletter-sec .ms-bg-color:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 70px 0 0 70px;
+    border-color: transparent transparent transparent #fff;
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -20px;
+    transform: rotate(180deg);
+}
+#home-two-newsletter-sec form ::placeholder {
+    color: #636368;
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+}
+#home-two-newsletter-sec input {
+    width: 100%;
+    padding: 14px 80px 15px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.09);
+}
+#home-two-newsletter-sec input:focus {
+    outline: 0;
+}
+#home-two-newsletter-sec .btn.ms-green-btn {
+    position: absolute;
+    bottom: 60px;
+    right: 68px;
+    padding: 12px;
+    border-radius: 5px;
+}
+#home-two-newsletter-sec img {
+    position: absolute;
+    z-index: 99;
+    top: -72px;
+    left: -70px
+}
+/*---------- Footer CSS ----------*/
+#homepage-two footer {
+    background: #2e2f34;
+    padding-top: 130px;
+}
+#homepage-two footer p, 
+#homepage-two footer p a, 
+#homepage-two footer .footer-icons a {
+    color: #cdcdcd;
+    transition: 0.3s all linear;
+    -webkit-transition: 0.3s all linear;
+}
+#homepage-two footer p a:hover,
+#homepage-two footer .footer-icons a:hover {
+    color:#fff;
+}
+#homepage-two footer .ms-footer-top hr {
+    border-top: 1px solid #4d4d4d;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+/*==================== 16. Author Page CSS ====================*/
+.ms-author-bnr {
+    background: url('../images/banners/abt-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+#ms-author-section h6.position-relative {
+    top:10px;
+}
+#ms-author-section .ms-author-head {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+#ms-author-section .ms-author-content {
+    font-size: 15px;
+    line-height: 1.8;
+}
+#ms-author-section .ms-author-icon {
+    font-size:10px;
+    color:#000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+    background: transparent;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+#ms-author-section .ms-author-icon:hover {
+    background: #eb4235;
+    color:#fff;
+}

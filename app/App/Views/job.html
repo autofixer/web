@@ -1,0 +1,103 @@
+<!-- Banner Section -->
+<section id="ms-banner-section" class="ms-abt-bnr ms-abt-bnr-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">Job Information</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" $href="/">Home</a> / Job</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="ms-contact-section" class="ms-sec-padding ms-special-footer-pad">
+	<div class="container">
+		<div class="row" style="margin-bottom: 60px;">
+		  <div class="col-lg-12">
+			<h2 class="ms-font-weight-900 all-caps">HELLO {$data->mechanic->name}!</h2>
+			<div class="ms-spacer-30"></div>
+			<p>Your task information can be seen below. Please as you go on with your task do ensure to keep us updated by sending a message through the form below. Thanks!</p>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<h2 class="ms-font-weight-900">JOB INFORMATION</h2>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Service Type</h5>
+				<p class="mb-0">{ucfirst($data->service->serviceType)}</p>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Customer Name</h5>
+				<p class="mb-0">{ucwords($data->service->name)}</p>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Customer Email</h5>
+				<a href="mailto:{$data->service->email}"><p class="d-inline-block ms-font-red mb-0"><u>{$data->service->email}</u></p></a>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Customer Phone</h5>
+				<a href="tel:{$data->service->phone}"><p class="d-inline-block ms-font-red mb-0"><u>{$data->service->phone}</u></p></a>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Customer Location</h5>
+				<p class="mb-0">{ucwords($data->service->location)}</p>
+				<div class="ms-spacer-30"></div>
+
+				@if (is_string($data->service->address))
+				<h5 class="font-weight-bold">Customer Address</h5>
+				<p class="mb-0">{$data->service->address}</p>
+				<div class="ms-spacer-30"></div>
+				@endif
+
+				<h5 class="font-weight-bold">Car Make</h5>
+				<p class="mb-0">{ucwords($data->manufacturer->name)}</p>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Car Year</h5>
+				<p class="mb-0">{$data->service->carYear}</p>
+				<div class="ms-spacer-30"></div>
+				
+				@if (is_string($data->service->carModel))
+				<h5 class="font-weight-bold">Car Model</h5>
+				<p class="mb-0">{$data->service->carModel}</p>
+				<div class="ms-spacer-30"></div>
+				@endif
+
+				@if ($data->service->needingMechanic == 'yes')
+				<h5 class="font-weight-bold">Date to visit</h5>
+				<p class="mb-0">{$data->service->dateToVisit}</p>
+				<div class="ms-spacer-30"></div>
+
+				<h5 class="font-weight-bold">Time to visit</h5>
+				<p class="mb-0">{$data->service->timeToVisit}</p>
+				<div class="ms-spacer-30"></div>
+				@endif
+
+				<h5 class="font-weight-bold">Customer Feedback</h5>
+				<p class="mb-0">{$data->service->comment}</p>
+				<div class="ms-spacer-30"></div>
+				
+				
+			</div>
+			<div class="col-md-7">
+				<h2 class="ms-font-weight-900">SEND A MESSAGE</h2>
+				<div class="ms-spacer-30"></div>
+				<p>During your engagement on this task, you can send in a message as your report which would help for future referencing and repair history.</p>
+				<form method="POST" class="collect-form-data" data-caller="submitMechanicMessage">
+					<input type="hidden" id="serviceid" value="{$data->service->serviceid}"/>
+					<input type="hidden" id="mechanicid" value="{$data->mechanic->mechanicid}"/>
+
+					<div class="form-row">
+						<div class="form-group col-12">
+							<textarea class="form-control form-control-lg rounded-0" id="review" rows="10" placeholder="Message*"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn ms-primary-btn ms-red-border-btn ms-font-oswald">SUBMIT NOW</button>
+				</form>
+			</div>
+		</div>
+	</div>
+  </section>
+  

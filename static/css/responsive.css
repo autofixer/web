@@ -1,0 +1,859 @@
+/*==================== Media Queries ====================*/
+
+/*==================== Media Query for max-width 1440px (Laptop View) ====================*/
+
+@media (max-width:1440px) {
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Slider Section ----------*/
+    #ms-slider-section .ms-slider-pad {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #ms-slider-section .carousel-caption {
+        bottom: 60px;
+    }
+    #ms-slider-section .carousel-indicators {
+        bottom: 260px;
+    }
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 210px !important;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav button {
+        top: 160px;
+    }
+    .ms-testimonial-home .ms-testimonial-box {
+        padding: 40px 20px 30px 20px !important;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    /*---------- Slider Section CSS ----------*/
+    #home-two-slider-section h1 {
+        font-size: 50px;
+    }
+    #home-two-slider-section .carousel-caption {
+        bottom: 20%;
+    }
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon:after,
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon:after {
+        top: 20px;
+    }
+    #home-two-slider-section .carousel-control-prev, 
+    #home-two-slider-section .carousel-control-next {
+        width: 10%;
+    }
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        background-position-x: 95%, 9%;
+        background-position-y: 0, 55px;
+        background-size: 25%, 38%;
+    }
+    /*---------- Blog Section CSS ----------*/
+    #home-two-blog-sec {
+        background-position: -70% 250%;
+    }
+
+}
+
+/*==================== Media Query for max-width 1300px (Laptop View) ====================*/
+
+@media (max-width:1300px) {
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Slider Section ----------*/
+    #ms-slider-section .ms-slider-pad {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #ms-slider-section .carousel-indicators {
+        margin-right: 0;
+    }
+    #ms-slider-section .ms-spacer-60 {
+        height: 30px;
+    }
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 185px !important;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        background-position-y: 0, 100px;
+    }
+
+}
+
+/*==================== Media Query for max-width 1030px (Ipad Pro View) ====================*/
+
+@media (max-width:1030px) {
+    /*==================== 1. General CSS ====================*/
+    h1 {
+        font-size: 60px;
+    }
+
+    /*========== Header Section ==========*/
+    header .ms-logo-pad {
+        padding: 25px 10px 25px 10px;
+    }
+    header .ms-header-main ul li a.nav-link {
+        margin: 0 5px;
+    }
+
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Services Section ----------*/
+    #ms-service-section .ms-left-image-bg {
+        padding: 120px 50px;
+    }
+    /*---------- Homepage Specialize Section ----------*/
+    #ms-special-section .ms-img-content {
+        bottom: 10px;
+        left: 22px;
+    }
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 225px !important;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav .owl-prev {
+        left: 7%;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav .owl-next {
+        right: 7%;
+    }
+
+    /*==================== 4. About Page CSS ====================*/
+    /*---------- About Content Section ----------*/
+    #ms-abt-section .col-md-7.ms-pad-right {
+        padding-right: 30px;
+    }
+    #ms-abt-section .col-md-7.ms-pad-left {
+        padding-left: 30px;
+    }
+
+    /*==================== 5. Testimonials Page CSS ====================*/
+    #ms-testimonial-section .ms-testimonial-box {
+        padding: 40px 40px 20px 40px;
+    }
+    #ms-testimonial-section .ms-spacer-30 {
+        height: 10px;
+    }
+    #ms-testimonial-section .ms-testimonial-box:after {
+        left: 202px;
+    }
+
+    /*==================== 9. Shop Detail Page CSS ====================*/
+    #ms-shop-detail-section .carousel-item .thumb {
+        width: 31.2%;
+    }
+
+    /*==================== 11. Team Page CSS ====================*/
+    /*---------- Our Team Page Content ----------*/
+    #ms-team-page-section .ms-team-box {
+        padding: 60px;
+    }
+
+    /*==================== 12. Service V1 Page CSS, Service V2 Page CSS and Service Details Page CSS ====================*/
+    /*---------- Service Page Tab Section ----------*/
+    #ms-service-tab-section .tab-content {
+        padding-left: 30px;
+    }
+
+    /*---------- Brands We Work With Section ----------*/
+    .ms-brands-section .ms-sec-padding .row img {
+        padding: 20px;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    .home-two-pad {
+        padding: 100px 0;
+    }
+    /*---------- Header CSS ----------*/
+    #homepage-two header .ms-header-main ul li a.nav-link {
+        padding: 18px 15px;
+    }
+    #homepage-two header .menu_toggle .hamburger span,
+    #homepage-two header .menu_toggle .hamburger-cross span { 
+        background: #000;
+    }
+    #homepage-two header .ms-header-main .menu_toggle {
+        left: 0;
+    }
+    /*---------- Slider Section CSS ----------*/
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon {
+        border-right-width: 20px;
+    }
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon {
+        border-left-width: 20px;
+    }
+    #home-two-slider-section .carousel-control-prev .carousel-control-prev-icon:after {
+        right: -14px;
+    }
+    #home-two-slider-section .carousel-control-next .carousel-control-next-icon:after {
+        left: -14px;
+    }
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        background-position-y: 0, 120px;
+        background-position-x: 95%, 5%;
+        background-size: 25%, 45%;
+    }
+    /*---------- Footer CSS ----------*/
+    #home-two-newsletter-sec img {
+        width: 65%;
+        top: -50px;
+        left: -20px;
+    }
+    #home-two-newsletter-sec .ms-bg-color {
+        padding: 50px 60px 50px 100px;
+    }
+    #home-two-newsletter-sec .btn.ms-green-btn {
+        bottom: 50px;
+        right: 60px;
+    }
+    /*---------- Blog Section CSS ----------*/
+    #home-two-blog-sec {
+        background-position: -70% 100%;
+        background-size: 50%;
+    }
+
+}
+
+/*==================== Media Query for max-width 770px (Ipad View) ====================*/
+
+@media(max-width:770px) {
+    /*==================== 1. General CSS ====================*/
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size:26px;
+    }
+    h4 {
+        font-size:20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .ms-primary-btn {
+        padding: 11px 40px;
+    }
+    .ms-sec-padding {
+        padding:80px 0;
+    }
+    .ms-ipad-margin {
+        margin-bottom: 30px;
+    }
+    .ms-special-footer-pad {
+        padding-bottom: 130px;
+    }
+
+    /*========== Header Section ==========*/
+    header .ms-logo-pad {
+        padding: 23px 15px 23px 15px;
+    }
+    header .ms-header-top {
+        padding: 15px 30px;
+    }
+    header .ms-header-main  .menu_toggle {
+        left: 390px;
+    }
+    header .ms-skew-bg, header .ms-header-top p, header .ms-header-top img, header .ms-header-main ul li a, .navbar-toggler.collapsed, header nav ul li {
+        transform: skew(0deg);
+        -webkit-transform: skew(0deg);
+    }
+
+    /*========== Footer Section ==========*/
+    #ms-footer .ms-footer-top .ms-foot-btn {
+        padding: 13px 25px;
+        font-size: 17px;
+    }
+    #ms-footer .ms-footer-top input {
+        padding: 15px 150px 15px 20px;
+    }
+    #ms-footer .ms-footer-bottom .ms-bg-orange {
+        padding: 20px 20px 20px 20px;
+    }
+    #ms-footer .ms-footer-bottom .col-md-2 .fa-2x {
+        font-size: 24px !important;
+    }
+    #ms-footer .ms-spacer-120 {
+        height: 90px;
+    }
+    #ms-footer .ms-newsletter-box {
+        padding: 25px 20px;
+    }
+    #ms-footer .ms-newsletter-box h3 {
+        font-size:20px;
+    }
+    #ms-footer .ms-newsletter-box {
+        margin-top: -150px;
+    }
+
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Slider Section ----------*/
+    #ms-slider-section .carousel-caption {
+        bottom: 100px;
+    }
+    #ms-slider-section .ms-slider-indicator {
+        z-index: 1;
+    }
+    #ms-slider-section .ms-primary-btn {
+        padding: 10px 40px;
+    }
+    /*---------- Homepage Service Section ----------*/
+    #ms-service-section .ms-left-image-bg {
+        padding: 80px 10px;
+    }
+    #ms-service-section .ms-sec-padding {
+        padding-left: 20px;
+    }
+    /*---------- Homepage About Us Section ----------*/
+    #ms-about-section .ms-contact-box {
+        padding: 20px 15px;
+    }
+    /*---------- Homepage Team Section ----------*/
+    #ms-team-section .ms-team-box .ms-team-img {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    #ms-team-section .ms-team-box img.position-absolute {
+        top: 33%;
+        right: 12%;
+    }
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 160px !important;
+    }
+    .ms-testimonial-home .ms-testimonial-box {
+        padding: 40px 10px 20px 10px !important;
+    }
+    /*---------- Homepage Blog Section ----------*/
+    #ms-blog-section {
+        padding-bottom: 120px;
+    }
+
+    /*==================== 4. About Page CSS ====================*/
+    /*---------- About Content Section ----------*/
+    #ms-abt-section .col-md-7.ms-pad-right {
+        padding-right: 10px;
+    }
+    #ms-abt-section .col-md-7.ms-pad-left {
+        padding-left: 10px;
+    }
+    #ms-abt-section .ms-spacer-100 {
+        height: 70px;
+    }
+
+    /*==================== 5. Testimonials Page CSS ====================*/
+    #ms-testimonial-section .ms-testimonial-box:after {
+        left: 142px;
+    }
+    
+    /*==================== 7. 404 Error Page CSS ====================*/
+    /*---------- 404 Page Section ----------*/
+    #ms-404-section {
+        padding: 100px 0 150px 0;
+    }
+    #ms-404-section h1 {
+        font-size: 40px;
+    }
+
+    /*==================== 11. Team Page CSS ====================*/
+    /*---------- Our Team Page Content ----------*/
+    #ms-team-page-section .ms-team-box {
+        padding: 40px;
+    }
+
+    /*==================== 12. Service V1 Page CSS, Service V2 Page CSS and Service Details Page CSS ====================*/
+    /*---------- Service Page Tab Section ----------*/
+    #ms-service-tab-section .tab-content {
+        padding-left: 0;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    .home-two-pad {
+        padding: 80px 0;
+    }
+    .ms-font-40 {
+        font-size: 36px;
+    }
+    #homepage-two h2 {
+        font-size: 24px;
+    }
+    /*---------- Header CSS ----------*/
+    #homepage-two header .ms-header-main {
+        padding: 6px 0px;
+    }
+    #homepage-two header .menu_toggle {
+        width: 23px;
+        height: 23px;
+    }
+    #homepage-two header .ms-header-main .menu_toggle {
+        left: 5px;
+        top: 8px;
+    }
+    #homepage-two header .ms-header-main nav {
+        margin-top: -48px;
+    }
+    #homepage-two header .ms-header-main nav .ms-header-content {
+        margin-top: 20px;
+    }
+    /*---------- Slider Section CSS ----------*/
+    #home-two-slider-section h1 {
+        font-size: 45px;
+    }
+    #home-two-slider-section .carousel-caption {
+        left: 15%;
+        right: 15%;
+        bottom: 15%;
+    }
+    #home-two-slider-section .carousel-control-prev, 
+    #home-two-slider-section .carousel-control-next {
+        width: 13%;
+    }
+    /*---------- Service Section CSS ----------*/
+    #home-two-service-sec .ms-spacer-60 {
+        height: 40px;
+    }
+    #home-two-service-sec .position-absolute {
+        bottom: 122px;
+    }
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        padding-bottom: 400px;
+        background-size: 40%, 60%;
+        background-position-x: 95%, 50%;
+        background-position-y: 0, 350px;
+    }
+    /*---------- Shop Section CSS ----------*/
+    #home-two-shop-sec .owl-carousel .owl-nav {
+        position: absolute;
+        top: -80px;
+        right: 0;
+    }
+    /*---------- Blog Section CSS ----------*/
+    #home-two-blog-sec article {
+        margin-bottom: 40px;
+    }
+    #home-two-blog-sec .title {
+        font-size: 18px;
+    }
+    /*---------- Testimonial Section CSS ----------*/
+    #home-two-testimonial-sec h4 {
+        font-size: 20px;
+    }
+    /*---------- Newsletter Section CSS ----------*/
+    #home-two-newsletter-sec {
+        padding-top: 100px;
+    }
+    #home-two-newsletter-sec .ms-bg-color {
+        padding: 150px 100px 70px 100px;
+    }
+    #home-two-newsletter-sec .btn.ms-green-btn {
+        bottom: 70px;
+        right: 100px;
+    }
+    #home-two-newsletter-sec img {
+        width: 90%;
+        top: -180px;
+        left: 50px;
+    }
+    #home-two-newsletter-sec .ms-bg-color:after {
+        display: block;
+        transform: rotate(90deg);
+        top: -1px;
+        left: -20px;
+    }
+    /*---------- Footer CSS ----------*/
+    #homepage-two footer {
+        padding-top: 100px;
+    }
+    #homepage-two footer .ms-footer-top hr {
+        margin-top: 50px;
+    }
+
+}
+
+/*==================== Media Query for max-width 500px, 380px, 350px (Mobile View) ====================*/
+
+@media (max-width:500px) {
+    /*==================== 1. General CSS ====================*/
+    h1 {
+        font-size: 30px;
+    }
+    .ms-sec-padding {
+        padding: 60px 0;
+    }
+    .ms-special-footer-pad {
+        padding-bottom: 140px;
+    }
+
+    /*========== Header Section ==========*/
+    header .ms-header-main .menu_toggle {
+        left: 325px;
+    }
+    header .ms-logo-pad img {
+        max-width: 70%;
+    }
+
+    /*========== Footer Section ==========*/
+    #ms-footer .ms-newsletter-box {
+        padding: 20px 20px;
+        margin-top: -170px;
+    }
+    #ms-footer .ms-spacer-120 {
+        height: 60px;
+    }
+    #ms-footer .ms-footer-bottom {
+        padding: 20px 0;
+    }
+    #ms-footer .ms-footer-bottom .col-md-4 .position-relative {
+        top: 5px;
+    }
+
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Slider Section ----------*/
+    #ms-slider-section .ms-font-21 {
+        font-size: 16px;
+    }
+    #ms-slider-section .ms-spacer-60 {
+        height: 10px;
+    }
+    #ms-slider-section .carousel-indicators {
+        bottom: 20px;
+        left: -12%;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    #ms-slider-section .carousel-caption {
+        bottom: 120px;
+        right: 4%;
+        left: 4%;
+    }
+    #ms-slider-section .carousel-inner img.ms-slide-img {
+        object-position: right;
+    }
+    /*---------- Homepage Services Section ----------*/
+    #ms-service-section .ms-left-image-bg {
+        padding: 60px 20px;
+    }
+    #ms-service-section .ms-sec-padding {
+        padding-left: 0px;
+    }
+    #ms-service-section .ms-service-box {
+        margin-bottom: 15px;
+    }
+    /*---------- Homepage About Us Section ----------*/
+    #ms-about-section .ms-contact-box.position-relative {
+        top: 30px;
+    }
+    #ms-about-section {
+        padding-bottom: 100px;
+    }
+    /*---------- Homepage Team Section ----------*/
+    #ms-team-section .ms-team-box img.position-absolute {
+        top: 43%;
+        right: 25%;
+    }
+    /*---------- Homepage Specialize Section ----------*/
+    #ms-special-section .ms-img-content {
+        bottom: 20px;
+        left: 32px;
+        right: 40px;;
+    }
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 170px !important;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav button {
+        top: 310px;
+    }
+    /*---------- Homepage Blog Section ----------*/
+    #ms-blog-section .ms-width-100 {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    #ms-blog-section .ms-blog-box {
+        padding: 10px 0 20px 0;
+    }
+    #ms-blog-section {
+        padding-bottom: 100px;
+    }
+
+    /*==================== 3. Inner Page's Banner CSS ====================*/
+    #ms-banner-section {
+        padding: 200px 0 90px 0;
+    }
+    #ms-banner-section h1, #ms-faq-section h1 {
+        font-size: 40px;
+    }
+
+    /*==================== 4. About Page CSS ====================*/
+    /*---------- About Content Section ----------*/
+    #ms-abt-section .col-md-7.ms-pad-right {
+        padding-right: 15px;
+    }
+    #ms-abt-section .col-md-7.ms-pad-left {
+        padding-left: 15px;
+    }
+    #ms-abt-section .ms-spacer-100 {
+        height: 40px;
+    }
+    /*---------- Counter Section ----------*/
+    #ms-counter-section h1 {
+        font-size: 60px;
+    }
+
+    /*==================== 5. Testimonials Page CSS ====================*/
+    #ms-testimonial-section {
+        padding-bottom: 100px;
+    }
+    #ms-testimonial-section .ms-testimonial-box {
+        margin-bottom: 35px;
+    }
+    #ms-testimonial-section .ms-testimonial-box:after {
+        left: 170px;
+    }
+
+    /*==================== 6. FAQ Page CSS ====================*/
+    #ms-faq-section {
+        padding-bottom: 110px;
+    }
+
+    /*==================== 7. 404 Error Page CSS ====================*/
+    /*---------- 404 Page Section ----------*/
+    #ms-404-section {
+        padding: 100px 0 180px 0;
+    }
+    #ms-404-section h1 {
+        font-size: 30px;
+    }
+
+    /*==================== 11. Team Page CSS ====================*/
+    /*---------- Our Team Page Content ----------*/
+    #ms-team-page-section .ms-team-box {
+        padding: 30px;
+    }
+
+    /*==================== 12. Service V1 Page CSS, Service V2 Page CSS and Service Details Page CSS ====================*/
+    /*---------- Service Page Tab Section ----------*/
+    .ms-brands-section .ms-sec-padding {
+        padding-bottom: 100px;
+    }
+
+    /*==================== 14. Cart Page CSS ====================*/
+    /*---------- Cart Page Content ----------*/
+    #ms-cart-section .ms-number input {
+        font-size: 18px;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    .home-two-pad {
+        padding: 60px 0;
+    }
+    /*---------- Slider Section CSS ----------*/
+    #home-two-slider-section h1 {
+        font-size: 32px;
+    }
+    #home-two-slider-section .carousel-caption {
+        left: 0;
+        right: 0;
+    }
+    #home-two-slider-section .carousel-control-prev, 
+    #home-two-slider-section .carousel-control-next {
+        width: 8%;
+    }
+    /*---------- Services Section CSS ----------*/
+    #home-two-service-sec .hexagon {
+        display: none;
+    }
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        padding-bottom: 280px;
+        background-position-y: 0, 550px;
+    }
+    /*---------- Shop Section CSS ----------*/
+    #home-two-shop-sec .home-two-shop-box {
+        margin: 0 15px;
+    }
+    #home-two-shop-sec .owl-carousel .owl-nav button {
+        font-size: 100px;
+    }
+    #home-two-shop-sec .owl-carousel .owl-nav {
+        right: 10px;
+    }
+    #home-two-shop-sec .owl-carousel .owl-nav .owl-prev {
+        top:15px;
+    }
+    /*---------- Newsletter Section CSS ----------*/
+    #home-two-newsletter-sec {
+        padding-top: 50px;
+    }
+    #home-two-newsletter-sec .ms-bg-color:before {
+        border-width: 40px 0 0 40px;
+        right: 0;
+    }
+    #home-two-newsletter-sec .ms-bg-color:after {
+        border-width: 40px 0 0 40px;
+        left: 0;
+    }
+    #home-two-newsletter-sec img {
+        width: 90%;
+        left: 30px;
+        top: -110px;
+    }
+    #home-two-newsletter-sec .ms-bg-color {
+        padding: 100px 60px 60px 60px;
+    }
+    #home-two-newsletter-sec .btn.ms-green-btn {
+        bottom: 60px;
+        right: 60px;
+    }
+    /*---------- Footer CSS ----------*/
+    #homepage-two footer {
+        padding-top: 60px;
+    }
+
+    /*==================== 16. Author Page CSS ====================*/
+    #ms-author-section .ms-spacer-60 {
+        height: 20px;
+    }
+}
+
+@media (max-width:380px) {
+    /*==================== 1. General CSS ====================*/
+    /*========== Header Section ==========*/
+    header .ms-header-main .menu_toggle {
+        left: 285px;
+    }
+
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 150px !important;
+    }
+
+    /*==================== 5. Testimonials Page CSS ====================*/
+    #ms-testimonial-section .ms-testimonial-box:after {
+        left: 155px;
+    }
+
+    /*==================== 14. Cart Page CSS ====================*/
+    /*---------- Cart Page Content ----------*/
+    #ms-cart-section .ms-btn-dark {
+        padding: 14px 30px;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        background-position-y: 0, 600px;
+    }
+    /*---------- Shop Section CSS ----------*/
+    #home-two-shop-sec .owl-carousel .owl-nav button {
+        font-size: 80px;
+    }
+    #home-two-shop-sec .owl-carousel .owl-nav .owl-prev {
+        left: 10px;
+    }
+    /*---------- Newsletter Section CSS ----------*/
+    #home-two-newsletter-sec img {
+        top: -90px;
+        left: 28px;
+    }
+    #home-two-newsletter-sec .ms-bg-color {
+        padding: 100px 40px 50px 40px;
+    }
+    #home-two-newsletter-sec .btn.ms-green-btn {
+        bottom: 50px;
+        right: 40px;
+    }
+
+}
+
+@media (max-width:350px) {
+    /*==================== 1. General CSS ====================*/
+    /*========== Header Section ==========*/
+    header .ms-logo-pad img {
+        max-width: 60%;
+    }
+    header .ms-header-main .menu_toggle {
+        left: 250px;
+    }
+    header .ms-header-top {
+        padding: 15px 10px;
+    }
+
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Testimonials Section ----------*/
+    .ms-testimonial-home .ms-testimonial-box:after {
+        left: 125px !important;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav .owl-prev {
+        left: 0;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav .owl-next {
+        right: 0;
+    }
+    .ms-testimonial-home #customers-testimonials .owl-nav button {
+        top: 335px;
+    }
+
+    /*==================== 5. Testimonials Page CSS ====================*/
+    #ms-testimonial-section .ms-testimonial-box:after {
+        left: 122px;
+    }
+
+    /*==================== 14. Cart Page CSS ====================*/
+    /*---------- Cart Page Content ----------*/
+    #ms-cart-section .ms-btn-dark {
+        padding: 14px 20px;
+    }
+
+    /*==================== 15. Homepage Version 2 CSS ====================*/
+    /*---------- About Us Section CSS ----------*/
+    #home-two-abt-sec {
+        background-size: 50%, 70%;
+        background-position-y: 0, 720px;
+    }
+    /*---------- Newsletter Section CSS ----------*/
+    #home-two-newsletter-sec .ms-bg-color {
+        padding: 70px 40px 50px 40px;
+    }
+    #home-two-newsletter-sec img {
+        left: 23px;
+    }
+
+}
+
+
+/*==================== Media Query from 1860px to 2000px ====================*/
+
+@media (min-width:1860px) and (max-width:2000px) {
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Services Section ----------*/
+    #ms-service-section .ms-sidebar-img {
+        display: block;
+    }
+}
+
+/*==================== Media Query for min width 991px ====================*/
+
+@media (min-width: 991px) {
+    /*==================== 1. General CSS ====================*/
+    /*========== Header Section ==========*/
+    header .ms-header-main .ms-header-area .ms-header-content .navbar-nav li.dropdown .dropdown-menu {
+      display: block;
+      min-width: 150px;
+    }
+}
+
+/*==================== Media Query for min width 700px and max width 800px ====================*/
+
+@media (min-width:700px) and (max-width:800px) {
+    /*==================== 2. Homepage CSS ====================*/
+    /*---------- Homepage Need Help Section ----------*/
+    #ms-help-section .col-md-6.position-relative {
+        left: 25%;
+    }
+}

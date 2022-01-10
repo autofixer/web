@@ -1,0 +1,452 @@
+.footer-small-logo{
+    width: 150px;
+}
+.all-caps{
+    text-transform: uppercase;
+}
+p{
+    line-height: 31px;
+}
+.contact-options-link{
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.contact-options-link a{
+    background-color: rgba(252, 0, 0, 0.03);
+    padding: 19px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #fc0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-options-link a:hover{
+    background-color: rgba(252, 0, 0, 1);
+    color: #fff;
+}
+
+.contact-options-link a .ion{
+    font-size: 28px;
+    margin-right: 9px;
+}
+
+.contact-options-link a:last-child{
+    margin-right: 0;
+}
+
+#ms-faq-section .faq-row{
+    display: flex;
+}
+
+#ms-faq-section .faq-row .faq-row-icon{
+    margin-right: 10px;
+}
+
+#ms-faq-section .faq-row .faq-row-icon .ion{
+    font-size: 20px;
+    color: #fc0000;
+}
+
+#ms-faq-section .faq-row .faq-row-body h2{
+    font-size: 25px;
+}
+
+#ms-faq-section .faq-row{
+    margin-bottom: 20px;
+}
+
+.add-margin-top{
+    margin-top: 80px;
+}
+
+#v-pills-tabContent h2{
+    margin-bottom: 20px;
+}
+
+#v-pills-tabContent p{
+    margin-bottom: 20px;
+}
+
+#v-pills-tabContent p a {
+    color: #fc0000;
+}
+
+#v-pills-tabContent form label{
+    font-size: 1.25rem;
+}
+
+#v-pills-tabContent form{
+    margin-top: 40px;
+}
+
+#v-pills-tabContent form button{
+    margin-top: 20px;
+}
+
+[data-if]{
+    display: none;
+}
+
+#customers-testimonials img{
+    border-radius: 50%;
+}
+
+#ms-about-section {
+    background: url('../images/about-sec-bg2.jpg') no-repeat center;
+}
+
+.ms-abt-bnr {
+    background: url('../images/banners/Banner4.jpg') no-repeat center;
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.ms-abt-bnr-5 {
+    background: url('../images/banners/Banner5.jpg') no-repeat center;
+}
+
+.ms-abt-bnr-6 {
+    background: url('../images/banners/Banner6.jpg') no-repeat center;
+}
+
+.ms-service-section-with-links p a{
+    color: #fc0000;
+}
+
+.ms-service-section-with-margin-below{
+    margin-bottom: 100px;
+}
+
+*[data-toggle="dropdown"]{
+    position: relative;
+}
+
+*[data-toggle="dropdown"]::after{
+    position: absolute;
+    content: "\f35f";
+    font-family: "Ionicons";
+    font-size: 18px;
+    right: -5px;
+}
+
+*[data-hover="white"]:hover .ms-help-box{
+    background-color: #fff !important;
+}
+
+:root{
+    --process-inactive: #ddd;
+}
+
+.processes{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.processes li{
+    margin-bottom: 20px;
+}
+
+.processes li{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.processes li::after{
+    position: absolute;
+    height: 20px;
+    content: "";
+    width: 1px;
+    background: var(--process-inactive);
+    bottom: -20px;
+    left: 15px;
+}
+
+.processes li:last-child::after{
+    display: none;
+}
+
+.processes li span{
+    color: var(--process-inactive);
+}
+
+.processes li .ion{
+    border: 1px solid var(--process-inactive);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--process-inactive);
+    margin-right: 10px;
+}
+
+.processes li.active span{
+    font-weight: 700;
+    color: #000;
+}
+
+.processes li.active:hover{
+    cursor: pointer;
+}
+
+.processes li.active .ion{
+    border-color: #090;
+    background: #090;
+    color: #fff;
+}
+
+.processes li.active::after{
+    background: #090;
+}
+
+.process-tab-list .process-tab{
+    display: none;
+}
+
+.process-tab-list .process-tab.active{
+    display: block;
+}
+
+*[data-select="true"] input[type="radio"]{
+    opacity: 0;
+}
+
+.process-tab .services{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.process-tab button{
+    margin-top: 20px;
+}
+
+.process-tab button:disabled{
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+
+.process-tab .services label{
+    width: 200px;
+    border: 1px solid #eee;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.process-tab .services label img{
+    width: 90px;
+    object-fit: cover;
+}
+
+.process-tab .services label:last-child{
+    margin-right: 0px;
+}
+
+*[data-select] label:hover{
+    border-color: #fc0000;
+    cursor: pointer;
+}
+
+*[data-select] label.active{
+    border-color: #fc0000;
+}
+
+*[data-select] label.active::after{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    content: "\f122";
+    font-family: "Ionicons";
+    color: #fc0000;
+    font-size: 16px;
+    background: transparent;
+    /* border: 1px solid #fc0000; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-primary-btn-prev{
+    background: transparent;
+    color: #fc0000;
+    border-right: none;
+}
+
+/* loader */
+.inline-loader-text{
+    display: flex;
+    align-items: center;
+}
+
+.inline-loader-text .loader{
+    margin-left: 10px;
+    width: 2em;
+    height: 2em;
+    border-top: 0.2em solid rgba(255, 255, 255, 0.2);
+    border-right: 0.2em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0.2em solid rgba(255, 255, 255, 0.2);
+    border-left: 0.2em solid rgba(255, 255, 255, 0.9);
+}
+
+.loader-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.loader-wrapper-fixed{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.loader-header{
+    display: none;
+    align-items: center;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.loader-wrapper-fixed .loader-header{
+    display: flex;
+}
+
+.loader-header img{
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.loader-header h3{
+    font-family: var(--bold-font);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+}
+
+.loader {
+  margin: 0px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.5em solid rgba(197, 197, 197, 0.2);
+  border-right: 0.5em solid rgba(197, 197, 197, 0.2);
+  border-bottom: 0.5em solid rgba(197, 197, 197, 0.2);
+  border-left: 0.5em solid var(--signal-color);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled:hover{
+    cursor: not-allowed;
+}
+
+.btn.no-hover:hover{
+    background: #fc0000;
+    outline: none;
+    color: #fff;
+}
+
+.btn.no-hover{
+    outline: none;
+}
+
+/* inline message box */
+.inline-message-box.show{
+    padding: 20px;
+    margin-top: 30px;
+    border: 0.2px dashed var(--border-color);
+}
+
+.inline-message-box.show.warning{
+    background-color: rgba(255,233,107,0.16);
+}
+
+.inline-message-box.show.error{
+    background-color: rgba(255, 236, 236, 0.73);
+}
+
+.inline-message-box.show.success{
+    background-color: rgba(6, 226, 54, 0.16);
+}
+
+.inline-message-box.show a{
+    color: var(--text-color);
+}
+
+.btn-success-theme{
+    background: #090 !important;
+    outline: none !important;
+    border-color: #090 !important;
+}
+
+.form-content-area{
+    background: rgba(83, 81, 81, 0.03);
+    margin-top: 20px;
+    padding: 20px;
+}

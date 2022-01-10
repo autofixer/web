@@ -1,0 +1,31 @@
+<!-- Testimonials Section -->
+<section id="ms-testimonial-section" class="ms-sec-padding ms-bg-cream ms-testimonial-home position-relative">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="ms-font-weight-900">TESTIMONIALS</h2>
+				<h4 class="ms-font-4a4a4a mb-5">Our customers says we are the best.</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="customers-testimonials" class="owl-carousel">
+                    {$testimonials = app('jsondb')->query('testimonials')->getAll();}
+                    @foreach ($testimonials as $testimonial)
+					<div class="item">
+						<div class="ms-testimonial-col">
+							<div class="ms-testimonial-box text-center">
+								<img src="@load-cdn('images', $testimonial->image);" class="img-fluid" alt="Client Image">
+								<div class="ms-spacer-30"></div>
+								<p>{$testimonial->text}</p>
+							</div>
+							<h5 class="font-weight-bold mt-4 mb-1">{ucwords($testimonial->name)}</h5>
+							<h6 class="ms-font-4a4a4a">{strtoupper($testimonial->location)}</h6>
+						</div>
+					</div>
+                    @endfor
+				</div>
+			</div>
+		</div>
+	</div>        
+</section>

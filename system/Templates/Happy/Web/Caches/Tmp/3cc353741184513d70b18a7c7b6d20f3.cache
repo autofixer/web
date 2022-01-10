@@ -1,0 +1,74 @@
+<?php
+use function Lightroom\Templates\Functions\{controller};
+use function Lightroom\Requests\Functions\{session, cookie, get};
+use function Lightroom\Common\Functions\csrf;
+?><!-- Banner Section -->
+<section id="ms-banner-section" class="ms-abt-bnr ms-abt-bnr-6">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">Book Online</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" href="<?=web_url("/")?>">Home</a> / Book Online</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About Content Section -->
+<section id="ms-abt-section" class="ms-sec-padding ms-service-section-with-links">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 ms-pad-right">
+				<h2 class="ms-font-weight-900 mb-4">CAR DIAGNOSIS</h2>
+				<p class="mb-4">Vehicle maintenance is more than just oil changes and wheel alignments. AUTOFIXER offers an extensive catalog of Manufacturer’s recommended Checks and Services for your vehicle, which keeps it running at its optimal level at all times. To get more out of this service, you can request <a href="<?=web_url("get-a-quote")?>">for a quote</a> or continue with the button below.</p>
+				<div class="row mb-4 mb-md-0">
+					<div class="col-md-12">
+						<p class="mb-3 ms-font-111"><i class="fa fa-money-bill-alt ms-font-red ms-icon-size mr-3"></i> Starting from N10,000</p>
+						<p class="mb-3 ms-font-111"><i class="fas fa-car ms-font-red ms-icon-size mr-3"></i> 1 - 2, have more ? <a href="<?=web_url("get-a-quote")?>">Discuss with sales</a></p>
+					</div>
+				</div>
+				<a href="<?=web_url("services/car-diagnosis")?>" class="btn ms-primary-btn ms-primary-btn-two ms-font-oswald mt-2  mt-md-4 mb-5 mb-md-0">REQUEST</a>    
+			</div>
+			<div class="col-md-5">
+				<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'diagnosis-pic.jpg')?>" class="img-fluid" alt="About Image">
+			</div>
+		</div>
+		<div class="ms-spacer-100"></div>
+		<div class="row flex-row-reverse">        
+			<div class="col-md-7 ms-pad-left">
+				<h2 class="ms-font-weight-900 mb-4 all-caps">CAR MAINTENANCE</h2>
+				<p class="mb-4">You don’t have to be an expert to know that preventive maintenance is the best way to make sure your vehicle keeps running at its optimum level. Vehicles are machines and, over time, machines break down. When it comes to avoiding potentially expensive automotive repairs, there are steps you can take to protect your investment. Preventive Maintenance helps to prolong the life of your vehicle and to proactively resolve any potential issues. Our professional Auto Technicians are trained on preventive maintenance measures, services and everything in between.</p>
+				<div class="row mb-4 mb-md-0">
+					<div class="col-md-12">
+						<p class="mb-3 ms-font-111"><i class="fa fa-money-bill-alt ms-font-red ms-icon-size mr-3"></i> Starting from N10,000</p>
+						<p class="mb-3 ms-font-111"><i class="fas fa-car ms-font-red ms-icon-size mr-3"></i> 1 - 2, have more ? <a href="<?=web_url("get-a-quote")?>">Discuss with sales</a></p>
+					</div>
+				</div>
+				<a href="<?=web_url("services/car-maintenance")?>" class="btn ms-primary-btn ms-primary-btn-two ms-font-oswald mt-2  mt-md-4 mb-5 mb-md-0">REQUEST</a> 
+			</div>
+			<div class="col-md-5">
+				<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'maintenace-pic.jpg')?>" class="img-fluid" alt="About Image">
+			</div>
+		</div>
+		<div class="ms-spacer-100"></div>
+		<div class="row">
+			<div class="col-md-7 ms-pad-right">
+				<h2 class="ms-font-weight-900 mb-4">CAR REPAIR</h2>
+				<p class="mb-4">A well maintained vehicle is more fuel efficient, more reliable, and will last longer, making the most of your auto investment. AUTOFIXER is the perfect car care partner. Our expert auto repair technicians are trained to perform diagnostic and repair services on all makes and models, and we can take care of your factory recommended maintenance service as well. From routine maintenance like oil changes and tire rotations to wear-related repairs including brakes and brake repair, catalytic converters and exhausts, steering and suspension repairs, AUTOFIXER has you covered.</p>
+				<div class="row mb-4 mb-md-0">
+					<div class="col-md-12">
+						<p class="mb-3 ms-font-111"><i class="fa fa-money-bill-alt ms-font-red ms-icon-size mr-3"></i> Starting from N10,000</p>
+						<p class="mb-3 ms-font-111"><i class="fas fa-car ms-font-red ms-icon-size mr-3"></i> 1 - 2, have more ? <a href="<?=web_url("get-a-quote")?>">Discuss with sales</a></p>
+					</div>
+				</div>
+				<a href="<?=web_url("services/car-repair")?>" class="btn ms-primary-btn ms-primary-btn-two ms-font-oswald mt-2  mt-md-4 mb-5 mb-md-0">REQUEST</a>    
+			</div>
+			<div class="col-md-5">
+				<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', 'repair-pic.jpg')?>" class="img-fluid" alt="About Image">
+			</div>
+		</div>
+	</div>
+</section>
+
+<?=\Happy\Directives::runDirective(true,'partial','testimonials')?>

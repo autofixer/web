@@ -1,0 +1,33 @@
+{
+    "stylesheet": [
+        "moorexa.css",
+        "{HOME}/static/ionicons/css/ionicons.min.css",
+        "{HOME}/static/vendor/custom_fonts/fonts.css",
+        "{HOME}/static/vendor/bootstrap/css/bootstrap.min.css",
+        "{HOME}/static/vendor/fontawesome/css/all.min.css",
+        "{HOME}/static/vendor/owl_carousel/css/owl.carousel.min.css",
+        "{HOME}/static/vendor/owl_carousel/css/owl.theme.default.css",
+        "{HOME}/static/css/style.css",
+        "{HOME}/static/css/responsive.css",
+        "{HOME}/static/css/reset.css"
+    ],
+
+    "stylesheet@bundle" : [
+
+    ],
+    
+    "scripts": [
+        "{HOME}/static/js/jquery-3.2.1.min.js",
+        "{HOME}/static/vendor/bootstrap/js/bootstrap.min.js",
+        "{HOME}/static/vendor/fontawesome/js/all.min.js",
+        "{HOME}/static/vendor/owl_carousel/js/owl.carousel.min.js",
+        "{HOME}/static/js/theme.js",
+        "{HOME}/static/js/reset.js",
+        "axios.min.js",
+        "{HOME}/static/js/app.js"
+    ],
+
+    "scripts@bundle" : [
+        
+    ]
+}

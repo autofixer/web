@@ -1,0 +1,65 @@
+<?php
+use function Lightroom\Templates\Functions\{controller};
+use function Lightroom\Requests\Functions\{session, cookie, get};
+use function Lightroom\Common\Functions\csrf;
+?><!-- Banner Section -->
+<section id="ms-banner-section" class="ms-abt-bnr ms-abt-bnr-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">Testimonials</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" href="<?=web_url("/")?>">Home</a> / Testimonials</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Testimonial Section -->
+<section id="ms-testimonial-section" class="ms-sec-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="ms-font-weight-900">OUR CUSTOMERS SAYS WE ARE THE BEST</h2>
+				<h4 class="ms-font-4a4a4a mb-5">Please see real reviews from our invited customers on a third party, external review website; </h4>
+			</div>
+			<br/>
+			<?php $testimonials = app('jsondb')->query('testimonials')->getAll();?>
+            <?php foreach ($testimonials as $testimonial) { ?>
+			<div class="col-md-6 text-center">
+				<div class="ms-testimonial-col mb-5">
+					<div class="ms-testimonial-box text-center">
+						<img src="<?=\Happy\Directives::runDirective(true,'load-cdn','images', $testimonial->image)?>" class="img-fluid img-circle" alt="Client Image">
+						<div class="ms-spacer-30"></div>
+						<p><?=$testimonial->text?></p>
+					</div>
+					<h5 class="font-weight-bold mt-4 mb-1"><?=ucwords($testimonial->name)?></h5>
+					<h6 class="ms-font-4a4a4a"><?=strtoupper($testimonial->location)?></h6>
+				</div>
+			</div>
+			<?php } ?>
+		</div>
+	</div>
+	<!-- <div class="container-fluid">
+		<div class="row">
+			<div class="ms-seperator-black mt-4 mb-5"></div>
+		</div>
+		<nav aria-label="Page navigation example">
+			<ul class="pagination justify-content-center">
+				 <li class="page-item">
+					<a class="page-link" href="#" aria-label="Previous">
+						<span aria-hidden="true">«</span>
+					</a>
+				</li> 
+				<li class="page-item"><a class="page-link active" href="#.">1</a></li>
+				<li class="page-item"><a class="page-link" href="#.">2</a></li>
+				<li class="page-item"><a class="page-link" href="#.">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#." aria-label="Next">
+						<i class="fas fa-chevron-right"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div> -->
+</section>

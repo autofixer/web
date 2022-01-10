@@ -1,0 +1,280 @@
+<!-- Banner Section -->
+<section id="ms-banner-section" class="ms-abt-bnr">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-white ms-font-weight-900">Our Services</h1>
+				<div class="ms-seperator my-4"></div>
+				<h5 class="pt-1 font-weight-normal text-white"><a class="text-white" $href="/">Home</a> / Services</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Service Page Tab Section -->
+<section id="ms-service-tab-section" class="ms-sec-padding">
+	<div class="container">
+		<!-- <div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="ms-font-weight-900">ALL SERVICES</h2>
+				<h4 class="ms-font-4a4a4a mb-4 mb-md-5">Please choose from any of our services that relates to you</h4>
+			</div>
+		</div> -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<a class="nav-link active" id="v-pills-one-tab" data-toggle="pill" href="#car-diagnosis" role="tab" aria-controls="v-pills-one" aria-selected="true">
+						<div class="ms-service-box rounded text-center position-relative">
+							<img class="img-fluid pb-3 ms-main-img" src="@load-cdn('images', '24.png');" alt="Service Image">
+							<p class="ms-font-lato font-weight-bold">DIAGNOSIS</p>
+							<div class="ms-service-box-hover position-absolute rounded">
+								<img class="img-fluid pb-3" src="@load-cdn('images', '25.png');" alt="Service Hover Image">
+								<p class="ms-font-lato font-weight-bold">DIAGNOSIS</p>
+							</div>
+						</div>
+					</a>
+					<a class="nav-link" id="v-pills-two-tab" data-toggle="pill" href="#car-maintenance" role="tab" aria-controls="v-pills-two" aria-selected="false">
+						<div class="ms-service-box rounded text-center position-relative">
+							<img class="img-fluid pb-3 ms-main-img" src="@load-cdn('images', '22.png');" alt="Service Image">
+							<p class="ms-font-lato font-weight-bold">MAINTENANCE</p>
+							<div class="ms-service-box-hover position-absolute rounded">
+								<img class="img-fluid pb-3" src="@load-cdn('images', '27.png');" alt="Service Hover Image">
+								<p class="ms-font-lato font-weight-bold">MAINTENANCE</p>
+							</div>
+						</div>
+					</a>
+					<a class="nav-link" id="v-pills-three-tab" data-toggle="pill" href="#car-repair" role="tab" aria-controls="v-pills-three" aria-selected="false">
+						<div class="ms-service-box rounded text-center position-relative mb-0">
+							<img class="img-fluid pb-3 ms-main-img" src="@load-cdn('images', '21.png');" alt="Service Image">
+							<p class="ms-font-lato font-weight-bold">REPAIR</p>
+							<div class="ms-service-box-hover position-absolute rounded">
+								<img class="img-fluid pb-3" src="@load-cdn('images', '28.png');" alt="Service Hover Image">
+								<p class="ms-font-lato font-weight-bold">REPAIR</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="car-diagnosis" role="tabpanel" aria-labelledby="v-pills-one-tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<h2 class="ms-font-weight-900">CAR DIAGNOSIS</h2>
+								<p>
+									Please complete the form below to contact our experts on diagnosis. They are ready to help you via video chat, call, or live chat to help resolve your car issue. If you need further assistance please use the customer care live chat to the bottom right of this page or call us on <a href="tel:+2347000114900">+234-7000-114-900</a>
+								</p>
+								<form method="POST" action="" class="collect-form-data" data-caller="submitDiagnosis">
+									<div class="form-row">
+										<div class="form-group col-12">
+											<label for="name">Name<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="name" placeholder="First & Last Name" required>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="email">Email<span>*</span></label>
+											<input type="email" class="form-control form-control-lg rounded-0" id="email" placeholder="We need to send a confirmation" required>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="tel">Telephone<span>*</span></label>
+											<input type="tel" class="form-control form-control-lg rounded-0" id="tel" placeholder="So we can call you" required>
+										</div>
+										<div class="form-group col-12">
+											<label for="location">Location<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="location" list="location" placeholder="E.g Abuja" required>
+										</div>
+										<div class="form-group col-12 col-md-6" data-request="getManufactures|#car_make">
+											<label for="car_make">Car Make<span>*</span></label>
+											<select class="form-control form-control-lg rounded-0" id="car_make">
+												<option value="">Please choose</option>
+											</select>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="car_year">Car Year<span>*</span></label>
+											<input type="tel" class="form-control form-control-lg rounded-0" list="car_year" id="car_year" placeholder="E.g 2021">
+										</div>
+										<div class="form-group col-12">
+											<label for="review">Comment<span>*</span></label>
+											<textarea class="form-control form-control-lg rounded-0" id="review" rows="7" placeholder="Please share what difficulty you are having*" required></textarea>
+										</div>
+									</div>
+									<button type="submit" class="btn ms-primary-btn ms-red-border-btn ms-font-oswald">SUBMIT NOW</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="car-maintenance" role="tabpanel" aria-labelledby="v-pills-two-tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<h2 class="ms-font-weight-900">CAR MAINTENANCE</h2>
+								<p>
+									Please complete the form below to contact our experts on maintenance. They are ready to work with you on a one time or periodic maintenance plan. If you need further assistance please use the customer care live chat to the bottom right of this page or call us on <a href="tel:+2347000114900">+234-7000-114-900</a>
+								</p>
+								<form method="POST" class="collect-form-data" data-caller="submitMaintenance">
+									<div class="form-row">
+										<div class="form-group col-12">
+											<label for="name">Name<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="name" placeholder="First & Last Name">
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="email">Email<span>*</span></label>
+											<input type="email" class="form-control form-control-lg rounded-0" id="email" placeholder="We need to send a confirmation">
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="tel">Telephone<span>*</span></label>
+											<input type="tel" class="form-control form-control-lg rounded-0" id="tel" placeholder="So we can call you">
+										</div>
+										<div class="form-group col-12">
+											<label for="location">Location<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="location" list="location" placeholder="E.g Abuja">
+										</div>
+										<div class="form-group col-12 col-md-6" data-request="getManufactures|.car-make-list">
+											<label for="car_make">Car Make<span>*</span></label>
+											<select class="form-control form-control-lg rounded-0 car-make-list" id="car_make">
+												<option value="">Please choose</option>
+											</select>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="car_year">Car Year<span>*</span></label>
+											<input type="tel" class="form-control form-control-lg rounded-0" list="car_year" id="car_year" placeholder="E.g 2021">
+										</div>
+										<div class="form-group col-12">
+											<label for="subsribe_plan">Would you like to subscribe to a maintenance plan?</label>
+											<select class="form-control form-control-lg rounded-0" id="subsribe_plan" name="subsribe_plan">
+												<option value="no">No</option>
+												<option value="yes">Yes</option>
+											</select>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="repair_date">What Date Should A Mechanic Come?</label>
+											<input type="date" class="form-control form-control-lg rounded-0" id="repair_date">
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="repair_time">What Time Should A Mechanic Come?</label>
+											<input type="time" class="form-control form-control-lg rounded-0" id="repair_time">
+										</div>
+										<div class="form-group col-12">
+											<label for="review">Comment<span>*</span></label>
+											<textarea class="form-control form-control-lg rounded-0" id="review" rows="7" placeholder="Please share any difficulty you are having"></textarea>
+										</div>
+									</div>
+									<button type="submit" class="btn ms-primary-btn ms-red-border-btn ms-font-oswald">SUBMIT NOW</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="car-repair" role="tabpanel" aria-labelledby="v-pills-three-tab">
+						<div class="row">
+							<div class="col-lg-12">
+								<h2 class="ms-font-weight-900">CAR REPAIR</h2>
+								<p>
+									Please complete the form below to contact our experts on repairs. They are ready to help you resolve your car issue. If you need further assistance please use the customer care live chat to the bottom right of this page or call us on <a href="tel:+2347000114900">+234-7000-114-900</a>
+								</p>
+								<form method="POST" class="collect-form-data" data-caller="submitRepair">
+									<div class="form-row">
+										<div class="form-group col-12">
+											<label for="name">Name<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="name" placeholder="First & Last Name">
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="email">Email<span>*</span></label>
+											<input type="email" class="form-control form-control-lg rounded-0" id="email" placeholder="We need to send a confirmation">
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="tel">Telephone<span>*</span></label>
+											<input type="tel" class="form-control form-control-lg rounded-0" id="tel" placeholder="So we can call you">
+										</div>
+										<div class="form-group col-12">
+											<label for="location">Location<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="location" list="location" placeholder="E.g Abuja">
+										</div>
+										<div class="form-group col-12">
+											<label for="onsite">Would you be needing an onsite mechanic?</label>
+											<select class="form-control form-control-lg rounded-0" id="onsite" name="onsite">
+												<option value="" selected>Please choose</option>
+												<option value="no">No</option>
+												<option value="yes">Yes</option>
+											</select>
+										</div>
+										<div class="form-group col-12 col-md-6" data-if="#onsite=yes">
+											<label for="repair_date">What Date Should A Mechanic Come?</label>
+											<input type="date" class="form-control form-control-lg rounded-0" id="repair_date">
+										</div>
+										<div class="form-group col-12 col-md-6" data-if="#onsite=yes">
+											<label for="repair_time">What Time Should A Mechanic Come?</label>
+											<input type="time" class="form-control form-control-lg rounded-0" id="repair_time">
+										</div>
+
+										<div class="form-group col-12" data-if="#onsite=yes">
+											<label for="address">Address<span>*</span></label>
+											<input type="text" class="form-control form-control-lg rounded-0" id="address" placeholder="Where the car is parked.">
+										</div>
+										
+										<div class="form-group col-12 col-md-6" data-request="getManufactures|.car_make">
+											<label for="car_make">Car Make<span>*</span></label>
+											<select class="form-control form-control-lg rounded-0 car_make" id="car_make">
+												<option value="">Please choose</option>
+											</select>
+										</div>
+										<div class="form-group col-12 col-md-6">
+											<label for="car_year">Car Year<span>*</span></label>
+											<input type="tel" class="form-control form-control-lg rounded-0" list="car_year" id="car_year" placeholder="E.g 2021">
+										</div>
+										<div class="form-group col-12">
+											<label for="review">Comment<span>*</span></label>
+											<textarea class="form-control form-control-lg rounded-0" id="review" rows="7" placeholder="Please share what difficulty you are having*"></textarea>
+										</div>
+									</div>
+									<button type="submit" class="btn ms-primary-btn ms-red-border-btn ms-font-oswald">SUBMIT NOW</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About Us Section -->
+<section id="ms-about-section" class="ms-sec-padding">
+	<div class="container">
+		<div class="row text-white">
+			<div class="col-md-6 col-lg-7">
+				<h2 class="ms-font-weight-900">ABOUT US</h2>
+				<p class="font-weight-light ms-font-e6e6e6 my-4">Autofixer is focused on providing you with excellent car repair and maintenance services in Nigeria, to keep your car performing in sterling conditions. Autofixer's Car services in Nigeria include battery service, car washing, denting & painting, car detailing, car tyre service, car brake service, car engine maintenance, car AC service and all that you need to get your car fixed. Car Servicing made easy!</p>
+				<p class="font-weight-light ms-font-e6e6e6 mb-4">Our network of specialized workshops deals with maintenance and repairs of specific brands such as Benz, BMW, Porsche, Volvo and more ensure accurate diagnosis and the most effective solution to your unique car problems.</p>
+				<a $href="book-online" class="btn ms-primary-btn ms-font-oswald mt-2">BOOK ONLINE</a>
+			</div>
+			<div class="col-md-6 col-lg-5 mt-5 mt-md-0">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="ms-contact-box rounded ms-bg-red text-center">
+							<img src="@load-cdn('images', 'Address_icon.png');" alt="Address Icon">
+							<p class="ms-font-17 ms-font-lato ms-font-weight-900 mt-3 mb-1 text-white">ADDRESS</p>
+							<h6 class="font-weight-light ms-font-roboto-slab mb-0">6 Daydream Street Warriewood GSM 54</h6>
+						</div>
+						<div class="ms-spacer-30"></div>
+						<div class="ms-contact-box rounded ms-bg-orange text-center">
+							<img src="@load-cdn('images', 'Email_icon.png');" alt="Email Icon">
+							<p class="ms-font-17 ms-font-lato ms-font-weight-900 mt-3 mb-1 text-white">EMAIL</p>
+							<a href="mailto:info@autofixer.com.ng"><h6 class="font-weight-light ms-font-roboto-slab mb-0">info@autofixer.com.ng</h6></a>
+							<a href="mailto:repair@autofixer.com.ng"><h6 class="font-weight-light ms-font-roboto-slab mb-0">repair@autofixer.com.ng</h6></a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="ms-contact-box rounded ms-bg-blue text-center position-relative">
+							<img src="@load-cdn('images', 'Phone_icon.png');" alt="Phone Icon">
+							<p class="ms-font-17 ms-font-lato ms-font-weight-900 mt-3 mb-1 text-white">PHONE</p>
+							<a href="tel:+08778550066"><h6 class="font-weight-light ms-font-roboto-slab mb-0">0877 855 0066</h6></a>
+							<a href="tel:+552000111"><h6 class="font-weight-light ms-font-roboto-slab mb-0">(552) 000 111</h6></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@partial('testimonials');
+
+@partial('blog');
